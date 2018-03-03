@@ -1,0 +1,22 @@
+PODS:
+  - ARCL (1.0.2)
+
+DEPENDENCIES:
+  - ARCL (from `https://github.com/ProjectDent/ARKit-CoreLocation`, branch `master`)
+
+EXTERNAL SOURCES:
+  ARCL:
+    :branch: master
+    :git: https://github.com/ProjectDent/ARKit-CoreLocation
+
+CHECKOUT OPTIONS:
+  ARCL:
+    :commit: 0b21e57998be41ea2c6f8f5093ec401cd5022866
+    :git: https://github.com/ProjectDent/ARKit-CoreLocation
+
+SPEC CHECKSUMS:
+  ARCL: 81ca9299eec52de30fb6e2b11ea5728e2e0a3c1f
+
+PODFILE CHECKSUM: ca17ae559974a2651ca0f136c8651d41b756b2a5
+
+COCOAPODS: 1.2.0
