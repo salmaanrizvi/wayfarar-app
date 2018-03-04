@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CB34D9D6318E23B9B54B7F408106A1BE'
-               BlueprintName = 'MKRingProgressView'
+               BlueprintIdentifier = 'EF14880C0FEDF40336901B48DF641DFF'
+               BlueprintName = 'Pulley'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'MKRingProgressView.framework'>
+               BuildableName = 'Pulley.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

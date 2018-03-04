@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double MKRingProgressViewVersionNumber;
-FOUNDATION_EXPORT const unsigned char MKRingProgressViewVersionString[];
+FOUNDATION_EXPORT double PulleyVersionNumber;
+FOUNDATION_EXPORT const unsigned char PulleyVersionString[];
 

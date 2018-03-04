@@ -1,12 +1,12 @@
 PODS:
   - ARCL (1.0.2)
   - LiquidLoader (1.2.1)
-  - MKRingProgressView (1.1.4)
+  - Pulley (1.4)
 
 DEPENDENCIES:
   - ARCL (from `https://github.com/ProjectDent/ARKit-CoreLocation`, branch `master`)
   - LiquidLoader (from `https://github.com/yoavlt/LiquidLoader`, branch `master`)
-  - MKRingProgressView
+  - Pulley
 
 EXTERNAL SOURCES:
   ARCL:
@@ -27,8 +27,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   ARCL: 81ca9299eec52de30fb6e2b11ea5728e2e0a3c1f
   LiquidLoader: 73adf4f43b260ecb9dae807064e566d72c629dfd
-  MKRingProgressView: fbcfe6e5485404fc4e4bc3becbed4a1c8c7df715
+  Pulley: 3d47a5ca819b8f35a63e9a4811d35035d484d1d9
 
-PODFILE CHECKSUM: c96c8ea364bb8f17e5fc376235da4852fbacc9ae
+PODFILE CHECKSUM: 76def85a2f3b5df13a618ab6619e5c5a3a107729
 
 COCOAPODS: 1.2.0
