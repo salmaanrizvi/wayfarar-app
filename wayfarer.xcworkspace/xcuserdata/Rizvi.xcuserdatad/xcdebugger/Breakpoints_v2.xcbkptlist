@@ -31,13 +31,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/ARCL/ARKit+CoreLocation/Source/SceneLocationView.swift"
-            timestampString = "541811164.8020951"
+            timestampString = "541896857.888602"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "352"
             endingLineNumber = "352"
-            landmarkName = "SceneLocationView"
-            landmarkType = "3">
+            landmarkName = "updatePositionAndScaleOfLocationNode(locationNode:initialSetup:animated:duration:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -47,7 +47,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/ARCL/ARKit+CoreLocation/Source/SceneLocationView.swift"
-            timestampString = "541811164.802151"
+            timestampString = "541896857.8886631"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "435"

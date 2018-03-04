@@ -90,9 +90,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ARCL/ARCL.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LiquidLoader/LiquidLoader.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MKRingProgressView/MKRingProgressView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ARCL/ARCL.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LiquidLoader/LiquidLoader.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MKRingProgressView/MKRingProgressView.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

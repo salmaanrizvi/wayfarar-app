@@ -9,17 +9,19 @@
 import Foundation
 import UIKit.UIColor
 
-fileprivate let _ace = ["text": .white, "line": UIColor(hexString: "#0039A6")];
-fileprivate let _bdfm = ["text": .white, "line": UIColor(hexString: "#FF6319")];
-fileprivate let _g = ["text": .white, "line": UIColor(hexString: "#6CBE45")];
+let _ace = ["text": .white, "line": UIColor(hexString: "#0039A6")];
+let _bdfm = ["text": .white, "line": UIColor(hexString: "#FF6319")];
+let _g = ["text": .white, "line": UIColor(hexString: "#6CBE45")];
 
-fileprivate let _jz = ["text": .white, "line": UIColor(hexString: "#996633")];
-fileprivate let _l = ["text": .white, "line": UIColor(hexString: "#A7A9AC")];
-fileprivate let _nqrw = ["text": .black, "line": UIColor(hexString: "#FCCC0A")];
-fileprivate let _s = ["text": .white, "line": UIColor(hexString: "#808183")];
-fileprivate let _123 = ["text": .white, "line": UIColor(hexString: "#EE352E")];
-fileprivate let _456 = ["text": .white, "line": UIColor(hexString: "#00933C")];
-fileprivate let _7 = ["text": .white, "line": UIColor(hexString: "#B933AD")];
+let _jz = ["text": .white, "line": UIColor(hexString: "#996633")];
+let _l = ["text": .white, "line": UIColor(hexString: "#A7A9AC")];
+let _nqrw = ["text": .black, "line": UIColor(hexString: "#FCCC0A")];
+let _s = ["text": .white, "line": UIColor(hexString: "#808183")];
+let _123 = ["text": .white, "line": UIColor(hexString: "#EE352E")];
+let _456 = ["text": .white, "line": UIColor(hexString: "#00933C")];
+let _7 = ["text": .white, "line": UIColor(hexString: "#B933AD")];
+
+let groupedLines = [_ace, _bdfm, _g, _l, _nqrw, _123, _456, _7];
 
 public let colorMap: [String: [String: UIColor]] = [
   "A": _ace, "C": _ace, "E": _ace,

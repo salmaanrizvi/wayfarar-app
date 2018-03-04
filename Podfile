@@ -8,4 +8,5 @@ target 'wayfarer' do
   # Pods for wayfarer
   pod 'ARCL', :git => 'https://github.com/ProjectDent/ARKit-CoreLocation', :branch => 'master'
   pod 'MKRingProgressView'
+  pod 'LiquidLoader', :git => 'https://github.com/yoavlt/LiquidLoader', :branch => 'master'
 end

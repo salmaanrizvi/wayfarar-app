@@ -1,0 +1,20 @@
+{
+  "name": "LiquidLoader",
+  "version": "1.2.1",
+  "summary": "Loader UI components with liquid animation",
+  "description": "Loader UI components with liquid animation inspired by Spinner Loader - Gooey light Effect",
+  "homepage": "https://github.com/yoavlt/LiquidLoader",
+  "license": "MIT",
+  "authors": {
+    "Takuma Yoshida": "yoa.jmpr.w@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yoavlt/LiquidLoader.git",
+    "tag": "1.2.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*"
+}

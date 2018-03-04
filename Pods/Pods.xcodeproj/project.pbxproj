@@ -7,31 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26683F12F8E4341CC8C0349ABA563DF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
-		328C76F7B2887FF1938F79F7FDD56154 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BE1F04517D566AD9325C9235BA9F69 /* SceneLocationEstimate.swift */; };
+		02DFC32A6F5F0F284BAC129FC864D598 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F4FBAFBE12EA91F18373ED6550E00B /* CircularGradientLayer.swift */; };
+		0598DA96FC09E118A4D16659C0666659 /* MKRingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212894F06BC682DAD7CB5B5C76F46D75 /* MKRingProgressView.swift */; };
+		09B013081854D594C0C71BC253E006DB /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184345B9A8B0854C0957F292DAE4F94 /* UIColorEx.swift */; };
+		1AFD8402A99F9C3BA0110EA4E61ADEF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */; };
+		1BECA648ABB94F3A5041ADC33B3D566D /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7B7716657CF757E3DCA39BDDA23968 /* CGRectEx.swift */; };
+		257B6753226AE1FD667243069EEF0F7B /* Pods-wayfarer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 448E91511E31149C544015506B037EB2 /* Pods-wayfarer-dummy.m */; };
+		259E6825CC14DA2AEDB5BE8E46AC6923 /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F81DA70048B67FF4C6486BFA47050248 /* LiquidLoader-dummy.m */; };
+		328C76F7B2887FF1938F79F7FDD56154 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC36FE4D19B36A210E5B558BB2E4E9 /* SceneLocationEstimate.swift */; };
 		34F2F80D3047DFBFF52DA50C9675F124 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79673D96BCDFF236A244E406A373381E /* CoreLocation.framework */; };
 		3B10E6A662F9E018D394779552F21C4C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05254A0C94E2D62E88562D48C26C7979 /* MapKit.framework */; };
-		436181E53F5BA4A2B459EDD990E37E4A /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAD59925CC04BDC7ABAFE8461B69DC4 /* ARCL-dummy.m */; };
-		63D854E84DA7E603B398BF94987466F7 /* Pods-wayfarer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3B7D741DE8B71983189DA6F83F265B /* Pods-wayfarer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A23697E3630FE875F1CE7A834A12885 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD70063F7C944D43601A313A8635DFE5 /* CGPoint+Extensions.swift */; };
+		436181E53F5BA4A2B459EDD990E37E4A /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F38AFFB46FAA9F2AD555E608A5015D87 /* ARCL-dummy.m */; };
+		49EAF74DE185FED5DB7F8484E637FE7E /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A24181E9A7815F11FBE400387FC9158 /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C805C7E718586EBEF09ABAA11BB9226 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59308D4760D2A8D5B692593D3DA3CC16 /* LiquittableCircle.swift */; };
+		502C696B976C6895FAFBBAA4B881696D /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748320E79100867788FFE405A32DBF /* LiquidLoader.swift */; };
+		6565AF761DA8424C0BAAA277EAE06F3D /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1642B8A0216A15F07CD9E7A51844352F /* ArrayEx.swift */; };
+		67130B3D31B000BD07DD539B938FE1DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
+		6A23697E3630FE875F1CE7A834A12885 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2065E3FB350709E664968B7362D45 /* CGPoint+Extensions.swift */; };
 		6DEABB858932B7F6FBB14FBE19F0DFB6 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1133D82C30562AE07C12D04C3EA63E32 /* ARKit.framework */; };
-		6E9601E984C4D1F5319E168150F1D1B9 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5C4C2D7BDE4061026A63204FCEE871 /* SCNNode+Extensions.swift */; };
-		7E214852DF7DBB76DA7FCEA9744F5D6B /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA33073F9C12F860DAF4AA201EC83E25 /* SceneLocationEstimate+Extensions.swift */; };
-		94AEB317771173DC21512A973919A41D /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D11E2D340D61388C1452D83E9B28C2 /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E9601E984C4D1F5319E168150F1D1B9 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA3217F829A73D3F12A4A7293517F8 /* SCNNode+Extensions.swift */; };
+		7203568427FC66ACEFB34A9BFFE6C942 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFDD87F92A049296DB4258F4BBDA0BC /* LiquidUtil.swift */; };
+		7E214852DF7DBB76DA7FCEA9744F5D6B /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE361FA6EBB1351BE8EB2399B2F659 /* SceneLocationEstimate+Extensions.swift */; };
+		8D20FB41CD4383862ECF3223276F21C0 /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B11EF6FE19B5158348B420356AF6F7 /* LiquidCircleEffect.swift */; };
+		94AEB317771173DC21512A973919A41D /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD43452A79F0F24DD3A5FF9FF108663D /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F03D2BBA4C184E01CD3CAF4C69E99E5 /* Pods-wayfarer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3B7D741DE8B71983189DA6F83F265B /* Pods-wayfarer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACD719013B6B80EACBE2DD66733C9577 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B1FA7F0F7D87A94D0B9B1BE4250930 /* SceneKit.framework */; };
-		AFBF191BAEBFE7616C59E588E0D2BA74 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69E66B00C8F8B50F1458B55B4D37E2 /* LocationNode.swift */; };
-		B56F10623F5BD6F885457C00FBF133B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415B34A539E6D6DDCD20B45AF16CD4C3 /* LocationManager.swift */; };
-		C4FC987CF150C9C4166AFAC1B7F3ACF9 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319E0DC1B30E98D519501407551CC12F /* SCNVector3+Extensions.swift */; };
+		AD783CE87F723A45D01F0FE01AE2C8C1 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893652644F6ADCB01FE388D2F9D9AA3 /* SimpleCircleLiquidEngine.swift */; };
+		AFBF191BAEBFE7616C59E588E0D2BA74 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF00A9790990D5A123D98AC11921D59B /* LocationNode.swift */; };
+		B04FE24ECC9F5A898C16EF14F71AE1E9 /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056CB5FD5E4A8BD0C69AA11997A8D402 /* LiquidLoadEffect.swift */; };
+		B072DE1BA1CE1837F2534F52B659A4D8 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13D46E7B1E4CBFBEA76351D5BEFC932 /* CGPointEx.swift */; };
+		B56F10623F5BD6F885457C00FBF133B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C0467AC741DAB28C2132073943251 /* LocationManager.swift */; };
+		BBA55D760FA45CCF274A1BDACACAA78A /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEC03CB11F75D565DD4C3C1246D90C5 /* ObjC.swift */; };
+		BD381550C3C1079B42A2A11F6DD0019F /* MKRingProgressView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B59EE0D4ECC425511E69B441A50FA03 /* MKRingProgressView-dummy.m */; };
+		C26FA45024BD93C827C942A485396D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
+		C4FC987CF150C9C4166AFAC1B7F3ACF9 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E29F246A787D0F2E453C62644DF749 /* SCNVector3+Extensions.swift */; };
+		CFFEFCE8DBE78C7F70AA91A120A46D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
 		D08BD6DE0BB9C717CFD66420C36B6EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
-		DA0E7D89130839EA8B589B5A57DA4B28 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEFBBABAA741D2AE8F13B97A0E0841D /* CLLocation+Extensions.swift */; };
-		E1A18D0CD71924F04F7D061934FECA18 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD67E2CC83214F93522BBCFC883D14F /* FloatingPoint+Radians.swift */; };
-		F040116CE0F4C53E48B322B3A7B8EE61 /* Pods-wayfarer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 448E91511E31149C544015506B037EB2 /* Pods-wayfarer-dummy.m */; };
-		F286B003B935CFD89B8AC2B1023ECE8A /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9D3C951A3DFB2FBC6799DA5F52B2CC /* SceneLocationView.swift */; };
+		D8FBC9AEF37132E4B5ABD1A6BC1FD1D5 /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CCCD80CB7B3EC5FBFF51F3373E8E1 /* LiquidLineEffect.swift */; };
+		DA0E7D89130839EA8B589B5A57DA4B28 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F167BC0C2956F1329558D276C47DD8 /* CLLocation+Extensions.swift */; };
+		E1A18D0CD71924F04F7D061934FECA18 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B87C5EF286B63D4944DCAA9C62BB4 /* FloatingPoint+Radians.swift */; };
+		E325BCB1605341E3A4766AA0BBD254EE /* MKGradientGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A522FE7E06AE9682751C101DDC3D2A /* MKGradientGenerator.swift */; };
+		E82AA94A7A946AE024400619B685F21D /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEE95163FE9A41C3DF92D044A2492E /* UIView+Grow.swift */; };
+		F286B003B935CFD89B8AC2B1023ECE8A /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EA0DCAE4CAA932E98BD6A28A0D28EF /* SceneLocationView.swift */; };
 		F43A61DBEE190C8F213EB8483DFCB05A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */; };
+		F885D968D2A53A848D24EFF1B1E38A87 /* MKRingProgressView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FFF796F9ED5984350F5167F5015301 /* MKRingProgressView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9C2D29A83A4EAC96589296E4D4538615 /* PBXContainerItemProxy */ = {
+		19DE16809E8C9B259B0199F27BC46A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB34D9D6318E23B9B54B7F408106A1BE;
+			remoteInfo = MKRingProgressView;
+		};
+		9377C70D29FBFE535BC6961D5DAE8FA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2EA684264EB56D32549B65A578BE7B;
+			remoteInfo = LiquidLoader;
+		};
+		C58C86B1BD31B7D43B9333A83277E167 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -41,49 +78,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EEE95163FE9A41C3DF92D044A2492E /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Grow.swift"; path = "Pod/Classes/UIView+Grow.swift"; sourceTree = "<group>"; };
 		05254A0C94E2D62E88562D48C26C7979 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		056CB5FD5E4A8BD0C69AA11997A8D402 /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoadEffect.swift; path = Pod/Classes/LiquidLoadEffect.swift; sourceTree = "<group>"; };
 		07B1FA7F0F7D87A94D0B9B1BE4250930 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
+		0DEE361FA6EBB1351BE8EB2399B2F659 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "ARKit+CoreLocation/Source/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
 		0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		10A89CF45862487F6558FAAABD810412 /* Pods-wayfarer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wayfarer.release.xcconfig"; sourceTree = "<group>"; };
 		1133D82C30562AE07C12D04C3EA63E32 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ARKit.framework; sourceTree = DEVELOPER_DIR; };
-		1D836C20BFCC0896119108C940AA1794 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		319E0DC1B30E98D519501407551CC12F /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
-		32BE1F04517D566AD9325C9235BA9F69 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "ARKit+CoreLocation/Source/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
-		3D466D44D61F95AFFA0F2E3A8C6A0B2E /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ARCL.modulemap; sourceTree = "<group>"; };
-		415B34A539E6D6DDCD20B45AF16CD4C3 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "ARKit+CoreLocation/Source/LocationManager.swift"; sourceTree = "<group>"; };
+		1642B8A0216A15F07CD9E7A51844352F /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
+		212894F06BC682DAD7CB5B5C76F46D75 /* MKRingProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKRingProgressView.swift; path = MKRingProgressView/MKRingProgressView.swift; sourceTree = "<group>"; };
+		24C76CE63477F38B3113648FE7CBE1CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2893652644F6ADCB01FE388D2F9D9AA3 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		2A24181E9A7815F11FBE400387FC9158 /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
+		395400407A2E05892A3369A756814C95 /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ARCL.modulemap; sourceTree = "<group>"; };
+		42B11EF6FE19B5158348B420356AF6F7 /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidCircleEffect.swift; path = Pod/Classes/LiquidCircleEffect.swift; sourceTree = "<group>"; };
 		448E91511E31149C544015506B037EB2 /* Pods-wayfarer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wayfarer-dummy.m"; sourceTree = "<group>"; };
-		48D11E2D340D61388C1452D83E9B28C2 /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
-		52A10E5D4430C0CDF3CC32AF0B8E4ADB /* Pods_wayfarer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wayfarer.framework; path = "Pods-wayfarer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FEFBBABAA741D2AE8F13B97A0E0841D /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "ARKit+CoreLocation/Source/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
-		6A5C4C2D7BDE4061026A63204FCEE871 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
-		735DA3E293A2AA503FF8C8AF7731073C /* ARCL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.xcconfig; sourceTree = "<group>"; };
+		46133E37B39381B477BD87DFBFBD9EFF /* ARCL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.xcconfig; sourceTree = "<group>"; };
+		4FEC36FE4D19B36A210E5B558BB2E4E9 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "ARKit+CoreLocation/Source/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
+		51748320E79100867788FFE405A32DBF /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoader.swift; path = Pod/Classes/LiquidLoader.swift; sourceTree = "<group>"; };
+		59308D4760D2A8D5B692593D3DA3CC16 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
+		594D033E794BD68F3DEA37E6DC23C480 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
+		59E29F246A787D0F2E453C62644DF749 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		5B59EE0D4ECC425511E69B441A50FA03 /* MKRingProgressView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKRingProgressView-dummy.m"; sourceTree = "<group>"; };
+		602892D69E8AEEAD76CE5259E36A607C /* ARCL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCL.framework; path = ARCL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62B70F94E2C37A8CDA4E8B5A672C5572 /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
+		6FED68BF659D2FD2E8F0C65064C62E9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79673D96BCDFF236A244E406A373381E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		7FAD59925CC04BDC7ABAFE8461B69DC4 /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
+		7A5F631EC519D7A5CD6E25C7FADA5DE8 /* LiquidLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiquidLoader.framework; path = LiquidLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EFDD87F92A049296DB4258F4BBDA0BC /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
 		810B7CC2B003F1C6AB6DFD78F47270CB /* Pods-wayfarer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wayfarer-resources.sh"; sourceTree = "<group>"; };
 		83FD21A90EDE694BD69350F252271499 /* Pods-wayfarer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-wayfarer.modulemap"; sourceTree = "<group>"; };
+		87F167BC0C2956F1329558D276C47DD8 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "ARKit+CoreLocation/Source/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		8A7B7716657CF757E3DCA39BDDA23968 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		8AEC03CB11F75D565DD4C3C1246D90C5 /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjC.swift; path = Pod/Classes/ObjC.swift; sourceTree = "<group>"; };
 		90187F295AFC9365376335087C8CD7D4 /* Pods-wayfarer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wayfarer-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3724F5B0E05BBDC05712BAE4B1DF925 /* ARCL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCL.framework; path = ARCL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD67E2CC83214F93522BBCFC883D14F /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "ARKit+CoreLocation/Source/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		95BB4F5AAB7208CDCCCE1B2E1D4872AE /* MKRingProgressView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKRingProgressView.xcconfig; sourceTree = "<group>"; };
+		96F4FBAFBE12EA91F18373ED6550E00B /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularGradientLayer.swift; path = Pod/Classes/CircularGradientLayer.swift; sourceTree = "<group>"; };
 		AEA9E2FFB6A6907CC1D1B3ED260CD57F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD70063F7C944D43601A313A8635DFE5 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "ARKit+CoreLocation/Source/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		B58BA654C5418AEA064DEC9D94D17CEE /* MKRingProgressView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-prefix.pch"; sourceTree = "<group>"; };
+		B5C2065E3FB350709E664968B7362D45 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "ARKit+CoreLocation/Source/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		B67EDD1267BDACD8CA124988F5F671BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5853EF3612835C464665928A358038 /* Pods_wayfarer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wayfarer.framework; path = "Pods-wayfarer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C097E6558F1C60DF1DC921025B51FF16 /* MKRingProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKRingProgressView.framework; path = MKRingProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C184345B9A8B0854C0957F292DAE4F94 /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
 		C6F54B6A540CB59079160F0C30A55A4D /* Pods-wayfarer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wayfarer-frameworks.sh"; sourceTree = "<group>"; };
-		CB9D3C951A3DFB2FBC6799DA5F52B2CC /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "ARKit+CoreLocation/Source/SceneLocationView.swift"; sourceTree = "<group>"; };
+		CC5C0467AC741DAB28C2132073943251 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "ARKit+CoreLocation/Source/LocationManager.swift"; sourceTree = "<group>"; };
 		CD7DB36DA530D163DA70B38311C7CDC5 /* Pods-wayfarer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wayfarer.debug.xcconfig"; sourceTree = "<group>"; };
+		D3A522FE7E06AE9682751C101DDC3D2A /* MKGradientGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MKGradientGenerator.swift; path = MKRingProgressView/MKGradientGenerator.swift; sourceTree = "<group>"; };
+		DAF437C90EA06D3F6DFFCF631EF55579 /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
 		DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DE69E66B00C8F8B50F1458B55B4D37E2 /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "ARKit+CoreLocation/Source/LocationNode.swift"; sourceTree = "<group>"; };
+		DD43452A79F0F24DD3A5FF9FF108663D /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
+		DF00A9790990D5A123D98AC11921D59B /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "ARKit+CoreLocation/Source/LocationNode.swift"; sourceTree = "<group>"; };
+		E0FFF796F9ED5984350F5167F5015301 /* MKRingProgressView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKRingProgressView-umbrella.h"; sourceTree = "<group>"; };
+		E4EA0DCAE4CAA932E98BD6A28A0D28EF /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "ARKit+CoreLocation/Source/SceneLocationView.swift"; sourceTree = "<group>"; };
+		E68B87C5EF286B63D4944DCAA9C62BB4 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "ARKit+CoreLocation/Source/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
 		EA3B7D741DE8B71983189DA6F83F265B /* Pods-wayfarer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wayfarer-umbrella.h"; sourceTree = "<group>"; };
+		EEEA3217F829A73D3F12A4A7293517F8 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
 		EEEE697570F907D66BDBAC3F01B6F520 /* Pods-wayfarer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wayfarer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F2CC1E7F0E960435D859AB5FF3AE5779 /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
-		FA33073F9C12F860DAF4AA201EC83E25 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "ARKit+CoreLocation/Source/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		F13D46E7B1E4CBFBEA76351D5BEFC932 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
+		F18CCCD80CB7B3EC5FBFF51F3373E8E1 /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLineEffect.swift; path = Pod/Classes/LiquidLineEffect.swift; sourceTree = "<group>"; };
+		F38AFFB46FAA9F2AD555E608A5015D87 /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
+		F81DA70048B67FF4C6486BFA47050248 /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
+		F8F3208E517E52F6F68BB57004BDACD1 /* MKRingProgressView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MKRingProgressView.modulemap; sourceTree = "<group>"; };
+		FE73BEBBD9FAFF61E148726B37BAD309 /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9BEDE4C6BFF967E55E16B20720A2C42A /* Frameworks */ = {
+		1599AE2911BEE5C9016B6A23ABDCEA9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26683F12F8E4341CC8C0349ABA563DF2 /* Foundation.framework in Frameworks */,
+				67130B3D31B000BD07DD539B938FE1DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC03D371A8054B88B7E3B540ACF5D1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26FA45024BD93C827C942A485396D69 /* Foundation.framework in Frameworks */,
+				1AFD8402A99F9C3BA0110EA4E61ADEF5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +176,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D6C6750813AB8E1B31BA043B2088DAA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFFEFCE8DBE78C7F70AA91A120A46D5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,25 +195,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14863B326A54D67B74CD4EA9C3A92C1E /* ARCL */ = {
-			isa = PBXGroup;
-			children = (
-				BD70063F7C944D43601A313A8635DFE5 /* CGPoint+Extensions.swift */,
-				5FEFBBABAA741D2AE8F13B97A0E0841D /* CLLocation+Extensions.swift */,
-				ABD67E2CC83214F93522BBCFC883D14F /* FloatingPoint+Radians.swift */,
-				415B34A539E6D6DDCD20B45AF16CD4C3 /* LocationManager.swift */,
-				DE69E66B00C8F8B50F1458B55B4D37E2 /* LocationNode.swift */,
-				32BE1F04517D566AD9325C9235BA9F69 /* SceneLocationEstimate.swift */,
-				FA33073F9C12F860DAF4AA201EC83E25 /* SceneLocationEstimate+Extensions.swift */,
-				CB9D3C951A3DFB2FBC6799DA5F52B2CC /* SceneLocationView.swift */,
-				6A5C4C2D7BDE4061026A63204FCEE871 /* SCNNode+Extensions.swift */,
-				319E0DC1B30E98D519501407551CC12F /* SCNVector3+Extensions.swift */,
-				FB0B5F274FF3F34ABB8AA5A0E25BD121 /* Support Files */,
-			);
-			name = ARCL;
-			path = ARCL;
-			sourceTree = "<group>";
-		};
 		2FC4538BD24E7C1119FEBAEC6D95C673 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,13 +203,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6CA564B56CAB11CE79026A729C5FDA6B /* Products */ = {
+		309FADE71FC6D32121F825D0648701BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3724F5B0E05BBDC05712BAE4B1DF925 /* ARCL.framework */,
-				52A10E5D4430C0CDF3CC32AF0B8E4ADB /* Pods_wayfarer.framework */,
+				602892D69E8AEEAD76CE5259E36A607C /* ARCL.framework */,
+				7A5F631EC519D7A5CD6E25C7FADA5DE8 /* LiquidLoader.framework */,
+				C097E6558F1C60DF1DC921025B51FF16 /* MKRingProgressView.framework */,
+				BC5853EF3612835C464665928A358038 /* Pods_wayfarer.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		460128725D4BE8ED0C475577FBABC8E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9751AC41C8B6C095360B01A8165E5D2F /* ARCL */,
+				D1353DD1A322D3EC2B2328FACD69F0E3 /* LiquidLoader */,
+				D75D5BAAC2AE26DED428F2E10EAAF645 /* MKRingProgressView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A2EDAD07255894625401BC7E588E7D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24C76CE63477F38B3113648FE7CBE1CA /* Info.plist */,
+				62B70F94E2C37A8CDA4E8B5A672C5572 /* LiquidLoader.modulemap */,
+				594D033E794BD68F3DEA37E6DC23C480 /* LiquidLoader.xcconfig */,
+				F81DA70048B67FF4C6486BFA47050248 /* LiquidLoader-dummy.m */,
+				FE73BEBBD9FAFF61E148726B37BAD309 /* LiquidLoader-prefix.pch */,
+				2A24181E9A7815F11FBE400387FC9158 /* LiquidLoader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LiquidLoader";
 			sourceTree = "<group>";
 		};
 		718E8FFEF38F857374DFFFC7415A361A /* Pods-wayfarer */ = {
@@ -170,32 +261,91 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				7E2EDA46737B4EF998C461A7A1D2EE68 /* Pods */,
-				6CA564B56CAB11CE79026A729C5FDA6B /* Products */,
+				460128725D4BE8ED0C475577FBABC8E0 /* Pods */,
+				309FADE71FC6D32121F825D0648701BE /* Products */,
 				2FC4538BD24E7C1119FEBAEC6D95C673 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7E2EDA46737B4EF998C461A7A1D2EE68 /* Pods */ = {
+		9751AC41C8B6C095360B01A8165E5D2F /* ARCL */ = {
 			isa = PBXGroup;
 			children = (
-				14863B326A54D67B74CD4EA9C3A92C1E /* ARCL */,
+				B5C2065E3FB350709E664968B7362D45 /* CGPoint+Extensions.swift */,
+				87F167BC0C2956F1329558D276C47DD8 /* CLLocation+Extensions.swift */,
+				E68B87C5EF286B63D4944DCAA9C62BB4 /* FloatingPoint+Radians.swift */,
+				CC5C0467AC741DAB28C2132073943251 /* LocationManager.swift */,
+				DF00A9790990D5A123D98AC11921D59B /* LocationNode.swift */,
+				4FEC36FE4D19B36A210E5B558BB2E4E9 /* SceneLocationEstimate.swift */,
+				0DEE361FA6EBB1351BE8EB2399B2F659 /* SceneLocationEstimate+Extensions.swift */,
+				E4EA0DCAE4CAA932E98BD6A28A0D28EF /* SceneLocationView.swift */,
+				EEEA3217F829A73D3F12A4A7293517F8 /* SCNNode+Extensions.swift */,
+				59E29F246A787D0F2E453C62644DF749 /* SCNVector3+Extensions.swift */,
+				A63EA62D28E85364129EA2AD252FBF76 /* Support Files */,
 			);
-			name = Pods;
+			name = ARCL;
+			path = ARCL;
 			sourceTree = "<group>";
 		};
-		FB0B5F274FF3F34ABB8AA5A0E25BD121 /* Support Files */ = {
+		A63EA62D28E85364129EA2AD252FBF76 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D466D44D61F95AFFA0F2E3A8C6A0B2E /* ARCL.modulemap */,
-				735DA3E293A2AA503FF8C8AF7731073C /* ARCL.xcconfig */,
-				7FAD59925CC04BDC7ABAFE8461B69DC4 /* ARCL-dummy.m */,
-				F2CC1E7F0E960435D859AB5FF3AE5779 /* ARCL-prefix.pch */,
-				48D11E2D340D61388C1452D83E9B28C2 /* ARCL-umbrella.h */,
-				1D836C20BFCC0896119108C940AA1794 /* Info.plist */,
+				395400407A2E05892A3369A756814C95 /* ARCL.modulemap */,
+				46133E37B39381B477BD87DFBFBD9EFF /* ARCL.xcconfig */,
+				F38AFFB46FAA9F2AD555E608A5015D87 /* ARCL-dummy.m */,
+				DAF437C90EA06D3F6DFFCF631EF55579 /* ARCL-prefix.pch */,
+				DD43452A79F0F24DD3A5FF9FF108663D /* ARCL-umbrella.h */,
+				B67EDD1267BDACD8CA124988F5F671BF /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ARCL";
+			sourceTree = "<group>";
+		};
+		D1353DD1A322D3EC2B2328FACD69F0E3 /* LiquidLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1642B8A0216A15F07CD9E7A51844352F /* ArrayEx.swift */,
+				F13D46E7B1E4CBFBEA76351D5BEFC932 /* CGPointEx.swift */,
+				8A7B7716657CF757E3DCA39BDDA23968 /* CGRectEx.swift */,
+				96F4FBAFBE12EA91F18373ED6550E00B /* CircularGradientLayer.swift */,
+				42B11EF6FE19B5158348B420356AF6F7 /* LiquidCircleEffect.swift */,
+				F18CCCD80CB7B3EC5FBFF51F3373E8E1 /* LiquidLineEffect.swift */,
+				056CB5FD5E4A8BD0C69AA11997A8D402 /* LiquidLoadEffect.swift */,
+				51748320E79100867788FFE405A32DBF /* LiquidLoader.swift */,
+				7EFDD87F92A049296DB4258F4BBDA0BC /* LiquidUtil.swift */,
+				59308D4760D2A8D5B692593D3DA3CC16 /* LiquittableCircle.swift */,
+				8AEC03CB11F75D565DD4C3C1246D90C5 /* ObjC.swift */,
+				2893652644F6ADCB01FE388D2F9D9AA3 /* SimpleCircleLiquidEngine.swift */,
+				C184345B9A8B0854C0957F292DAE4F94 /* UIColorEx.swift */,
+				04EEE95163FE9A41C3DF92D044A2492E /* UIView+Grow.swift */,
+				6A2EDAD07255894625401BC7E588E7D0 /* Support Files */,
+			);
+			name = LiquidLoader;
+			path = LiquidLoader;
+			sourceTree = "<group>";
+		};
+		D75D5BAAC2AE26DED428F2E10EAAF645 /* MKRingProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				D3A522FE7E06AE9682751C101DDC3D2A /* MKGradientGenerator.swift */,
+				212894F06BC682DAD7CB5B5C76F46D75 /* MKRingProgressView.swift */,
+				E83CFAB9A573E2503A5BA321332C8225 /* Support Files */,
+			);
+			name = MKRingProgressView;
+			path = MKRingProgressView;
+			sourceTree = "<group>";
+		};
+		E83CFAB9A573E2503A5BA321332C8225 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FED68BF659D2FD2E8F0C65064C62E9D /* Info.plist */,
+				F8F3208E517E52F6F68BB57004BDACD1 /* MKRingProgressView.modulemap */,
+				95BB4F5AAB7208CDCCCE1B2E1D4872AE /* MKRingProgressView.xcconfig */,
+				5B59EE0D4ECC425511E69B441A50FA03 /* MKRingProgressView-dummy.m */,
+				B58BA654C5418AEA064DEC9D94D17CEE /* MKRingProgressView-prefix.pch */,
+				E0FFF796F9ED5984350F5167F5015301 /* MKRingProgressView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKRingProgressView";
 			sourceTree = "<group>";
 		};
 		FDA5C35F353171FA0BCB3D2466E21678 /* iOS */ = {
@@ -214,11 +364,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7209B7A958DA1556E3CC65841591327C /* Headers */ = {
+		290647FC7688BA11AC8F449152199C98 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D854E84DA7E603B398BF94987466F7 /* Pods-wayfarer-umbrella.h in Headers */,
+				9F03D2BBA4C184E01CD3CAF4C69E99E5 /* Pods-wayfarer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56E1F20092F46373A00ED45E2536E0FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F885D968D2A53A848D24EFF1B1E38A87 /* MKRingProgressView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,25 +388,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		866AA2802CAE0BDBBFBB929F291E1AB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EAF74DE185FED5DB7F8484E637FE7E /* LiquidLoader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B09C5391319B3E87BE744DDCD310AD45 /* Pods-wayfarer */ = {
+		AB2EA684264EB56D32549B65A578BE7B /* LiquidLoader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 81A68842C6A879E29046F29D1DBDA68F /* Build configuration list for PBXNativeTarget "Pods-wayfarer" */;
+			buildConfigurationList = 17C5A80C1DFD393E712214751A895308 /* Build configuration list for PBXNativeTarget "LiquidLoader" */;
 			buildPhases = (
-				450C464B54348F8171F76E27823105EB /* Sources */,
-				9BEDE4C6BFF967E55E16B20720A2C42A /* Frameworks */,
-				7209B7A958DA1556E3CC65841591327C /* Headers */,
+				2297513383503E685E7C4B375C3AFA3C /* Sources */,
+				D6C6750813AB8E1B31BA043B2088DAA9 /* Frameworks */,
+				866AA2802CAE0BDBBFBB929F291E1AB9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD8F47FF339C594E74531D4BAB7E7A7D /* PBXTargetDependency */,
 			);
-			name = "Pods-wayfarer";
-			productName = "Pods-wayfarer";
-			productReference = 52A10E5D4430C0CDF3CC32AF0B8E4ADB /* Pods_wayfarer.framework */;
+			name = LiquidLoader;
+			productName = LiquidLoader;
+			productReference = 7A5F631EC519D7A5CD6E25C7FADA5DE8 /* LiquidLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B3FCF2DF4512CA0461222403526A28A8 /* ARCL */ = {
@@ -265,7 +430,44 @@
 			);
 			name = ARCL;
 			productName = ARCL;
-			productReference = A3724F5B0E05BBDC05712BAE4B1DF925 /* ARCL.framework */;
+			productReference = 602892D69E8AEEAD76CE5259E36A607C /* ARCL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB34D9D6318E23B9B54B7F408106A1BE /* MKRingProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43422D8B74A5ADB213535D72F0DBC499 /* Build configuration list for PBXNativeTarget "MKRingProgressView" */;
+			buildPhases = (
+				48C1CDF278B1617C9FC791D2C5A65F47 /* Sources */,
+				9BC03D371A8054B88B7E3B540ACF5D1D /* Frameworks */,
+				56E1F20092F46373A00ED45E2536E0FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKRingProgressView;
+			productName = MKRingProgressView;
+			productReference = C097E6558F1C60DF1DC921025B51FF16 /* MKRingProgressView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EFE5BF0EFBF32C50EDDE4018897F8A1A /* Pods-wayfarer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5D7DA768616CBBC03694F7606561BBB /* Build configuration list for PBXNativeTarget "Pods-wayfarer" */;
+			buildPhases = (
+				BC354825EFD3599B888B8370A06C2804 /* Sources */,
+				1599AE2911BEE5C9016B6A23ABDCEA9F /* Frameworks */,
+				290647FC7688BA11AC8F449152199C98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DB8255582FFE62347F878BD62DB76EF /* PBXTargetDependency */,
+				EC5F16C33908891E0E8E08676B7AB9F7 /* PBXTargetDependency */,
+				D6432E2D5BA4909F99F383E1FF3B6197 /* PBXTargetDependency */,
+			);
+			name = "Pods-wayfarer";
+			productName = "Pods-wayfarer";
+			productReference = BC5853EF3612835C464665928A358038 /* Pods_wayfarer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -285,12 +487,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 6CA564B56CAB11CE79026A729C5FDA6B /* Products */;
+			productRefGroup = 309FADE71FC6D32121F825D0648701BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B3FCF2DF4512CA0461222403526A28A8 /* ARCL */,
-				B09C5391319B3E87BE744DDCD310AD45 /* Pods-wayfarer */,
+				AB2EA684264EB56D32549B65A578BE7B /* LiquidLoader */,
+				CB34D9D6318E23B9B54B7F408106A1BE /* MKRingProgressView */,
+				EFE5BF0EFBF32C50EDDE4018897F8A1A /* Pods-wayfarer */,
 			);
 		};
 /* End PBXProject section */
@@ -314,29 +518,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		450C464B54348F8171F76E27823105EB /* Sources */ = {
+		2297513383503E685E7C4B375C3AFA3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F040116CE0F4C53E48B322B3A7B8EE61 /* Pods-wayfarer-dummy.m in Sources */,
+				6565AF761DA8424C0BAAA277EAE06F3D /* ArrayEx.swift in Sources */,
+				B072DE1BA1CE1837F2534F52B659A4D8 /* CGPointEx.swift in Sources */,
+				1BECA648ABB94F3A5041ADC33B3D566D /* CGRectEx.swift in Sources */,
+				02DFC32A6F5F0F284BAC129FC864D598 /* CircularGradientLayer.swift in Sources */,
+				8D20FB41CD4383862ECF3223276F21C0 /* LiquidCircleEffect.swift in Sources */,
+				D8FBC9AEF37132E4B5ABD1A6BC1FD1D5 /* LiquidLineEffect.swift in Sources */,
+				B04FE24ECC9F5A898C16EF14F71AE1E9 /* LiquidLoadEffect.swift in Sources */,
+				259E6825CC14DA2AEDB5BE8E46AC6923 /* LiquidLoader-dummy.m in Sources */,
+				502C696B976C6895FAFBBAA4B881696D /* LiquidLoader.swift in Sources */,
+				7203568427FC66ACEFB34A9BFFE6C942 /* LiquidUtil.swift in Sources */,
+				4C805C7E718586EBEF09ABAA11BB9226 /* LiquittableCircle.swift in Sources */,
+				BBA55D760FA45CCF274A1BDACACAA78A /* ObjC.swift in Sources */,
+				AD783CE87F723A45D01F0FE01AE2C8C1 /* SimpleCircleLiquidEngine.swift in Sources */,
+				09B013081854D594C0C71BC253E006DB /* UIColorEx.swift in Sources */,
+				E82AA94A7A946AE024400619B685F21D /* UIView+Grow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C1CDF278B1617C9FC791D2C5A65F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E325BCB1605341E3A4766AA0BBD254EE /* MKGradientGenerator.swift in Sources */,
+				BD381550C3C1079B42A2A11F6DD0019F /* MKRingProgressView-dummy.m in Sources */,
+				0598DA96FC09E118A4D16659C0666659 /* MKRingProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC354825EFD3599B888B8370A06C2804 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				257B6753226AE1FD667243069EEF0F7B /* Pods-wayfarer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD8F47FF339C594E74531D4BAB7E7A7D /* PBXTargetDependency */ = {
+		9DB8255582FFE62347F878BD62DB76EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ARCL;
 			target = B3FCF2DF4512CA0461222403526A28A8 /* ARCL */;
-			targetProxy = 9C2D29A83A4EAC96589296E4D4538615 /* PBXContainerItemProxy */;
+			targetProxy = C58C86B1BD31B7D43B9333A83277E167 /* PBXContainerItemProxy */;
+		};
+		D6432E2D5BA4909F99F383E1FF3B6197 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKRingProgressView;
+			target = CB34D9D6318E23B9B54B7F408106A1BE /* MKRingProgressView */;
+			targetProxy = 19DE16809E8C9B259B0199F27BC46A22 /* PBXContainerItemProxy */;
+		};
+		EC5F16C33908891E0E8E08676B7AB9F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidLoader;
+			target = AB2EA684264EB56D32549B65A578BE7B /* LiquidLoader */;
+			targetProxy = 9377C70D29FBFE535BC6961D5DAE8FA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		07B8A1DE7DBC03DD8E700FE91BA8B137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 735DA3E293A2AA503FF8C8AF7731073C /* ARCL.xcconfig */;
+			baseConfigurationReference = 46133E37B39381B477BD87DFBFBD9EFF /* ARCL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -367,7 +615,7 @@
 		};
 		0FC89A78926C3868E060031194258DB2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 735DA3E293A2AA503FF8C8AF7731073C /* ARCL.xcconfig */;
+			baseConfigurationReference = 46133E37B39381B477BD87DFBFBD9EFF /* ARCL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -451,7 +699,38 @@
 			};
 			name = Release;
 		};
-		3BF93EDFD767DC5D7B8A766017868838 /* Debug */ = {
+		25A1EF8B83C827F811B735873730F4D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95BB4F5AAB7208CDCCCE1B2E1D4872AE /* MKRingProgressView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKRingProgressView/MKRingProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKRingProgressView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MKRingProgressView/MKRingProgressView.modulemap";
+				PRODUCT_NAME = MKRingProgressView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29AFAB092894806248621C6DD0183072 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD7DB36DA530D163DA70B38311C7CDC5 /* Pods-wayfarer.debug.xcconfig */;
 			buildSettings = {
@@ -479,6 +758,71 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39797447B45531F1160BB3B2F610823C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A89CF45862487F6558FAAABD810412 /* Pods-wayfarer.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-wayfarer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-wayfarer/Pods-wayfarer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_wayfarer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E5C98151BE064F241C5B442C4D0EAA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594D033E794BD68F3DEA37E6DC23C480 /* LiquidLoader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
+				PRODUCT_NAME = LiquidLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -544,9 +888,9 @@
 			};
 			name = Debug;
 		};
-		9649B83F6803AA36354F5B6F5E81903C /* Release */ = {
+		924E22FECE67AA553E8EE225B26D0114 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10A89CF45862487F6558FAAABD810412 /* Pods-wayfarer.release.xcconfig */;
+			baseConfigurationReference = 95BB4F5AAB7208CDCCCE1B2E1D4872AE /* MKRingProgressView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -557,20 +901,48 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-wayfarer/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MKRingProgressView/MKRingProgressView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKRingProgressView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-wayfarer/Pods-wayfarer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_wayfarer;
+				MODULEMAP_FILE = "Target Support Files/MKRingProgressView/MKRingProgressView.modulemap";
+				PRODUCT_NAME = MKRingProgressView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F00A5F5F8FB59ADB9791243EFEBCD9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594D033E794BD68F3DEA37E6DC23C480 /* LiquidLoader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
+				PRODUCT_NAME = LiquidLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -590,6 +962,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		17C5A80C1DFD393E712214751A895308 /* Build configuration list for PBXNativeTarget "LiquidLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E5C98151BE064F241C5B442C4D0EAA8 /* Debug */,
+				F00A5F5F8FB59ADB9791243EFEBCD9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -599,11 +980,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		81A68842C6A879E29046F29D1DBDA68F /* Build configuration list for PBXNativeTarget "Pods-wayfarer" */ = {
+		43422D8B74A5ADB213535D72F0DBC499 /* Build configuration list for PBXNativeTarget "MKRingProgressView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3BF93EDFD767DC5D7B8A766017868838 /* Debug */,
-				9649B83F6803AA36354F5B6F5E81903C /* Release */,
+				25A1EF8B83C827F811B735873730F4D0 /* Debug */,
+				924E22FECE67AA553E8EE225B26D0114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5D7DA768616CBBC03694F7606561BBB /* Build configuration list for PBXNativeTarget "Pods-wayfarer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29AFAB092894806248621C6DD0183072 /* Debug */,
+				39797447B45531F1160BB3B2F610823C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

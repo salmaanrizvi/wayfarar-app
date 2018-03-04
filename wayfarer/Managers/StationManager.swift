@@ -42,9 +42,8 @@ public class StationManager: NSObject {
     if CLLocationManager.locationServicesEnabled() {
       self.locationManager.delegate = self;
       self.locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
-      self.locationManager.distanceFilter = 10.0; // in meters
+      self.locationManager.distanceFilter = 15.0; // in meters
       self.locationManager.headingOrientation = .portrait;
-//      self.locationManager.headingFilter = 10; // in degrees.
       
       self.locationManager.startUpdatingLocation();
       self.locationManager.startUpdatingHeading();

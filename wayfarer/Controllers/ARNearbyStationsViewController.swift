@@ -15,26 +15,36 @@ class ARNearbyStationsViewController: UIViewController {
   lazy var sceneLocationView = SceneLocationView();
   lazy var stationManager = StationManager();
 
+  lazy var loader: ARTLoaderView = {
+    let _loader = ARTLoaderView(frame: self.view.frame);
+    _loader.translatesAutoresizingMaskIntoConstraints = false;
+    self.view.addSubview(_loader);
+    _loader.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true;
+    _loader.heightAnchor.constraint(equalTo: self.view.heightAnchor).isActive = true;
+    _loader.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true;
+    _loader.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true;
+    return _loader;
+  }()
+
   @IBOutlet weak var debugBlur: UIVisualEffectView!
   @IBOutlet weak var debugStack: UIStackView!
   
   var hasInitialized: Bool = false {
-    didSet {
-      self.initializeTracking();
-    }
+    didSet { self.startTrackingLocation(); }
   }
 
   override func viewDidLoad() {
     super.viewDidLoad();
-    self.stationManager.delegate = self;
-    self.stationManager.enableLocationServices();
+    self.view.backgroundColor = .clear;
+
     self.sceneLocationView.locationDelegate = self;
     self.sceneLocationView.run();
+    self.view.insertSubview(self.sceneLocationView, at: 0);
+
     
-    self.view.addSubview(self.sceneLocationView);
-    
-    self.view.bringSubview(toFront: self.debugBlur);
-    self.view.bringSubview(toFront: self.debugStack);
+//    self.view.bringSubview(toFront: self.debugBlur);
+//    self.view.bringSubview(toFront: self.debugStack);
+    self.loader.show();
       // Do any additional setup after loading the view.
   }
   
@@ -48,12 +58,16 @@ class ARNearbyStationsViewController: UIViewController {
   }
 
   override func didReceiveMemoryWarning() {
-      super.didReceiveMemoryWarning()
-      // Dispose of any resources that can be recreated.
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
   }
   
-  func initializeTracking() {
-    
+  func startTrackingLocation() {
+    DispatchQueue.main.async {
+      self.stationManager.delegate = self;
+      self.stationManager.enableLocationServices();
+      self.loader.hide(1.0);
+    }
   }
   
   func removeOldNodes() {
@@ -113,11 +127,11 @@ extension ARNearbyStationsViewController: SceneLocationViewDelegate {
   func sceneLocationViewCameraDidChangeTrackingState(session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
     
     switch camera.trackingState {
-    case .normal: self.hasInitialized = true;
-    case .notAvailable: print("not available");
-    case .limited(.initializing): print("initializing");
-    case .limited(.excessiveMotion): print("excessive motion");
-    case .limited(.insufficientFeatures): print("insufficient features");
+      case .normal: self.hasInitialized = true;
+      case .notAvailable: print("not available");
+      case .limited(.initializing): print("initializing");
+      case .limited(.excessiveMotion): print("excessive motion");
+      case .limited(.insufficientFeatures): print("insufficient features");
     }
   }
   
