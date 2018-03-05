@@ -13,7 +13,8 @@ class NearByTableViewController: UITableViewController {
   lazy var stationManager = StationManager();
   
   override func viewDidLoad() {
-    super.viewDidLoad()
+    super.viewDidLoad();
+    self.view.backgroundColor = .clear;
 
     self.refreshControl = UIRefreshControl()
     self.refreshControl?.addTarget(self, action: #selector(refreshRequested), for: .valueChanged);

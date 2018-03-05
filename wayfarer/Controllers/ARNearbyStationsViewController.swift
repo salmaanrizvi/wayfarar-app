@@ -10,6 +10,7 @@ import UIKit
 import ARCL
 import CoreLocation
 import ARKit
+import Pulley
 
 class ARNearbyStationsViewController: UIViewController {
   lazy var sceneLocationView = SceneLocationView();
@@ -26,6 +27,7 @@ class ARNearbyStationsViewController: UIViewController {
     return _loader;
   }()
 
+  @IBOutlet weak var settingsButton: UIButton!
   @IBOutlet weak var debugBlur: UIVisualEffectView!
   @IBOutlet weak var debugStack: UIStackView!
   
@@ -36,6 +38,7 @@ class ARNearbyStationsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad();
     self.view.backgroundColor = .clear;
+    self.setupButton();
 
     self.sceneLocationView.locationDelegate = self;
     self.sceneLocationView.run();
@@ -62,11 +65,19 @@ class ARNearbyStationsViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
+  func setupButton() {
+    self.settingsButton.layer.cornerRadius = self.settingsButton.frame.height / 2;
+    self.settingsButton.layer.shadowOpacity = 0.75;
+    self.settingsButton.layer.shadowRadius = 8;
+    self.settingsButton.layer.shadowOffset = CGSize(width: 0, height: 0);
+    self.settingsButton.layer.shadowColor = UIColor.black.cgColor;
+  }
+  
   func startTrackingLocation() {
     DispatchQueue.main.async {
       self.stationManager.delegate = self;
       self.stationManager.enableLocationServices();
-      self.loader.hide(1.0);
+      self.loader.hide();
     }
   }
   

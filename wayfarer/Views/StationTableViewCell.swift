@@ -36,6 +36,7 @@ class StationTableViewCell: UITableViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib();
+    self.backgroundColor = .clear;
     // Initialization code
     self.selectionStyle = .none;
 

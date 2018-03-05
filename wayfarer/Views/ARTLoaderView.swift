@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MKRingProgressView
 import LiquidLoader
 
 class ARTLoaderView: UIView {
@@ -27,7 +26,6 @@ class ARTLoaderView: UIView {
     blurView.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true;
     blurView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true;
     
-    
     let loaderFrame = CGRect(origin: .zero, size: CGSize(width: 150.0, height: 150.0));
     let effect = Effect.growCircle(.black, 8, 3.0, .white);
     let loader = LiquidLoader(frame: loaderFrame, effect: effect);
@@ -41,7 +39,7 @@ class ARTLoaderView: UIView {
     self.setNeedsLayout();
   }
   
-  func show(_ _in: TimeInterval = 0.5) {
+  func show(_ _in: TimeInterval = 0.25) {
     DispatchQueue.main.async {
       self.superview?.bringSubview(toFront: self);
       self.isHidden = false;
@@ -52,7 +50,7 @@ class ARTLoaderView: UIView {
     }
   }
   
-  func hide(_ _in: TimeInterval = 0.5) {
+  func hide(_ _in: TimeInterval = 0.25) {
     DispatchQueue.main.async {
       UIView.animate(withDuration: _in, animations: {
         self.alpha = 0.0;
