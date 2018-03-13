@@ -13,8 +13,12 @@ import ARKit
 import Pulley
 
 class ARNearbyStationsViewController: UIViewController {
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    get { return UIStatusBarStyle.lightContent }
+  }
+  
   lazy var sceneLocationView = SceneLocationView();
-  lazy var stationManager = StationManager();
+  lazy var stationManager = StationManager.default;
 
   lazy var loader: ARTLoaderView = {
     let _loader = ARTLoaderView(frame: self.view.frame);
@@ -31,24 +35,28 @@ class ARNearbyStationsViewController: UIViewController {
   @IBOutlet weak var debugBlur: UIVisualEffectView!
   @IBOutlet weak var debugStack: UIStackView!
   
+  var rerun: Bool = false;
   var hasInitialized: Bool = false {
-    didSet { self.startTrackingLocation(); }
+    didSet {
+      if (hasInitialized) { self.startTrackingLocation(); }
+      else { self.restartTracking(); }
+    }
   }
 
   override func viewDidLoad() {
     super.viewDidLoad();
     self.view.backgroundColor = .clear;
+    self.loader.show();
     self.setupButton();
+    self.addTapGesture();
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated);
 
     self.sceneLocationView.locationDelegate = self;
     self.sceneLocationView.run();
     self.view.insertSubview(self.sceneLocationView, at: 0);
-
-    
-//    self.view.bringSubview(toFront: self.debugBlur);
-//    self.view.bringSubview(toFront: self.debugStack);
-    self.loader.show();
-      // Do any additional setup after loading the view.
   }
   
   override func viewDidLayoutSubviews() {
@@ -61,7 +69,8 @@ class ARNearbyStationsViewController: UIViewController {
   }
 
   override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
+    super.didReceiveMemoryWarning();
+    print("received memory warning");
     // Dispose of any resources that can be recreated.
   }
   
@@ -73,11 +82,52 @@ class ARNearbyStationsViewController: UIViewController {
     self.settingsButton.layer.shadowColor = UIColor.black.cgColor;
   }
   
+  func addTapGesture() {
+    let tapGestureRecognizer = UITapGestureRecognizer(target: self,
+                                                      action: #selector(didTapScene));
+
+    self.sceneLocationView.addGestureRecognizer(tapGestureRecognizer);
+  }
+  
+  @objc func didTapScene(withGestureRecognizer recognizer: UITapGestureRecognizer) {
+    let tapLocation = recognizer.location(in: self.sceneLocationView);
+    let hitTestResults = self.sceneLocationView.hitTest(tapLocation);
+    
+    if hitTestResults.first == nil {
+      return self.hideStationDetail();
+    }
+    
+    let maxIterations = 10;
+    var iterations = 0;
+
+    var tappedNode = hitTestResults.first?.node;
+    while (tappedNode != nil && iterations < maxIterations) {
+      if let stationNode = tappedNode as? StationNode {
+        self.showStationDetail(stationNode.station);
+        return;
+      }
+      tappedNode = tappedNode?.parent;
+      iterations += 1;
+    }
+  }
+  
   func startTrackingLocation() {
     DispatchQueue.main.async {
+      if (self.rerun) {
+        let options: ARSession.RunOptions = [.resetTracking];
+        self.sceneLocationView.run(options: options);
+      }
+
       self.stationManager.delegate = self;
       self.stationManager.enableLocationServices();
       self.loader.hide();
+    }
+  }
+  
+  func restartTracking() {
+    DispatchQueue.main.async {
+      self.loader.show();
+      self.rerun = true;
     }
   }
   
@@ -85,6 +135,16 @@ class ARNearbyStationsViewController: UIViewController {
     self.sceneLocationView.sceneNode?.childNodes.forEach({ node in
       self.sceneLocationView.removeLocationNode(locationNode: node as! LocationNode);
     });
+  }
+  
+  func showStationDetail(_ station: Station) {
+    let trains = self.stationManager.getTrainsFor(station: station);
+    let object: [String: Any] = ["station": station, "trains": trains];
+    NotificationCenter.default.post(name: .DrawerNotification, object: object);
+  }
+  
+  func hideStationDetail() {
+    NotificationCenter.default.post(name: .DrawerNotification, object: nil)
   }
 }
 
@@ -135,20 +195,32 @@ extension ARNearbyStationsViewController: StationManagerDelegate {
 }
 
 extension ARNearbyStationsViewController: SceneLocationViewDelegate {
+  func sceneLocationViewSessionWasInterrupted(_ session: ARSession) {
+    self.hasInitialized = false;
+  }
+  
+  func sceneLocationViewSessionInterruptionEnded(_ session: ARSession) {
+    self.hasInitialized = true;
+  }
+  
+  func sceneLocationViewSession(_ session: ARSession, didFailWithError error: Error) {
+    
+  }
+  
   func sceneLocationViewCameraDidChangeTrackingState(session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
     
     switch camera.trackingState {
       case .normal: self.hasInitialized = true;
       case .notAvailable: print("not available");
       case .limited(.initializing): print("initializing");
-      case .limited(.excessiveMotion): print("excessive motion");
-      case .limited(.insufficientFeatures): print("insufficient features");
+
+      case .limited(.excessiveMotion):
+        print("excessive motion");
+        self.hasInitialized = false;
+
+      case .limited(.insufficientFeatures):
+        print("insufficient features");
+        self.hasInitialized = false;
     }
   }
-  
-  func sceneLocationViewDidAddSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation) {}
-  func sceneLocationViewDidRemoveSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation) {}
-  func sceneLocationViewDidConfirmLocationOfNode(sceneLocationView: SceneLocationView, node: LocationNode) {}
-  func sceneLocationViewDidSetupSceneNode(sceneLocationView: SceneLocationView, sceneNode: SCNNode) {}
-  func sceneLocationViewDidUpdateLocationAndScaleOfLocationNode(sceneLocationView: SceneLocationView, locationNode: LocationNode) {}
 }

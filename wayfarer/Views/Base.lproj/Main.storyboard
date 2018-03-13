@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="2936" y="247"/>
         </scene>
-        <!--Pulley View Controller-->
+        <!--Pulley Container View Controller-->
         <scene sceneID="oAe-Q1-Ij2">
             <objects>
-                <viewController id="lb1-oo-0LC" customClass="PulleyViewController" customModule="Pulley" sceneMemberID="viewController">
+                <viewController id="lb1-oo-0LC" customClass="PulleyContainerViewController" customModule="wayfarer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ijD-NT-xO8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,29 +244,29 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-Oh-a3u" userLabel="Arrivals Stack">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="yFz-Oh-a3u" userLabel="Arrivals Stack">
                                                     <rect key="frame" x="60" y="55.5" width="281" height="129.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Court Square - in 1 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-yO-fPa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="281" height="32.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="281" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Court Square - in 10 mins" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-72-R2A">
-                                                            <rect key="frame" x="0.0" y="32.5" width="281" height="32.5"/>
+                                                            <rect key="frame" x="0.0" y="38" width="281" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Church Av - in 2 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0s-DQ-ciW">
-                                                            <rect key="frame" x="0.0" y="65" width="281" height="32"/>
+                                                            <rect key="frame" x="0.0" y="75.5" width="281" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Church Av - in 8 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nly-RH-Ruq">
-                                                            <rect key="frame" x="0.0" y="97" width="281" height="32.5"/>
+                                                            <rect key="frame" x="0.0" y="113.5" width="281" height="16"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>

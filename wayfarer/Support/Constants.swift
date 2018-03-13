@@ -32,4 +32,3 @@ public let colorMap: [String: [String: UIColor]] = [
   "4": _456, "5": _456, "6": _456, "7": _7
 ];
 
-

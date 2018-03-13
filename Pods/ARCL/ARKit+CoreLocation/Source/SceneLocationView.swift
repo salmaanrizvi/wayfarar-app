@@ -12,20 +12,24 @@ import CoreLocation
 import MapKit
 
 @available(iOS 11.0, *)
-public protocol SceneLocationViewDelegate: class {
-    func sceneLocationViewDidAddSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation)
-    func sceneLocationViewDidRemoveSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation)
+@objc public protocol SceneLocationViewDelegate: class {
+    @objc optional func sceneLocationViewDidAddSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation)
+    @objc optional func sceneLocationViewDidRemoveSceneLocationEstimate(sceneLocationView: SceneLocationView, position: SCNVector3, location: CLLocation)
     
     ///After a node's location is initially set based on current location,
     ///it is later confirmed once the user moves far enough away from it.
     ///This update uses location data collected since the node was placed to give a more accurate location.
-    func sceneLocationViewDidConfirmLocationOfNode(sceneLocationView: SceneLocationView, node: LocationNode)
+    @objc optional func sceneLocationViewDidConfirmLocationOfNode(sceneLocationView: SceneLocationView, node: LocationNode)
     
-    func sceneLocationViewDidSetupSceneNode(sceneLocationView: SceneLocationView, sceneNode: SCNNode)
+    @objc optional func sceneLocationViewDidSetupSceneNode(sceneLocationView: SceneLocationView, sceneNode: SCNNode)
     
-    func sceneLocationViewDidUpdateLocationAndScaleOfLocationNode(sceneLocationView: SceneLocationView, locationNode: LocationNode)
+    @objc optional func sceneLocationViewDidUpdateLocationAndScaleOfLocationNode(sceneLocationView: SceneLocationView, locationNode: LocationNode)
   
-  func sceneLocationViewCameraDidChangeTrackingState(session: ARSession, cameraDidChangeTrackingState camera: ARCamera);
+    @objc optional func sceneLocationViewCameraDidChangeTrackingState(session: ARSession, cameraDidChangeTrackingState camera: ARCamera);
+
+  @objc optional func sceneLocationViewSessionWasInterrupted(_ session: ARSession);
+  @objc optional func sceneLocationViewSessionInterruptionEnded(_ session: ARSession);
+  @objc optional func sceneLocationViewSession(_ session: ARSession, didFailWithError error: Error);
 }
 
 ///Different methods which can be used when determining locations (such as the user's location).
@@ -67,7 +71,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
                     sceneNode!.addChildNode(locationNode)
                 }
                 
-                locationDelegate?.sceneLocationViewDidSetupSceneNode(sceneLocationView: self, sceneNode: sceneNode!)
+                locationDelegate?.sceneLocationViewDidSetupSceneNode?(sceneLocationView: self, sceneNode: sceneNode!)
             }
         }
     }
@@ -121,9 +125,9 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         super.layoutSubviews()
     }
     
-    public func run() {
+    public func run(options: ARSession.RunOptions = []) {
         // Create a session configuration
-		let configuration = ARWorldTrackingConfiguration()
+      let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
         
         if orientToTrueNorth {
@@ -133,7 +137,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         }
         
         // Run the view's session
-        session.run(configuration)
+      session.run(configuration, options: options);
         
         updateEstimatesTimer?.invalidate()
         updateEstimatesTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(SceneLocationView.updateLocationData), userInfo: nil, repeats: true)
@@ -197,7 +201,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
             let sceneLocationEstimate = SceneLocationEstimate(location: location, position: position)
             self.sceneLocationEstimates.append(sceneLocationEstimate)
             
-            locationDelegate?.sceneLocationViewDidAddSceneLocationEstimate(sceneLocationView: self, position: position, location: location)
+            locationDelegate?.sceneLocationViewDidAddSceneLocationEstimate?(sceneLocationView: self, position: position, location: location)
         }
     }
     
@@ -216,7 +220,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
             let radiusContainsPoint = currentPoint.radiusContainsPoint(radius: CGFloat(SceneLocationView.sceneLimit), point: point)
             
             if !radiusContainsPoint {
-                locationDelegate?.sceneLocationViewDidRemoveSceneLocationEstimate(sceneLocationView: self, position: $0.position, location: $0.location)
+                locationDelegate?.sceneLocationViewDidRemoveSceneLocationEstimate?(sceneLocationView: self, position: $0.position, location: $0.location)
             }
             
             return radiusContainsPoint
@@ -337,7 +341,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         
         locationNode.locationConfirmed = true
         
-        locationDelegate?.sceneLocationViewDidConfirmLocationOfNode(sceneLocationView: self, node: locationNode)
+        locationDelegate?.sceneLocationViewDidConfirmLocationOfNode?(sceneLocationView: self, node: locationNode)
     }
     
     func updatePositionAndScaleOfLocationNodes() {
@@ -437,7 +441,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         
         SCNTransaction.commit()
         
-      locationDelegate?.sceneLocationViewDidUpdateLocationAndScaleOfLocationNode(sceneLocationView: self, locationNode: locationNode)
+      locationDelegate?.sceneLocationViewDidUpdateLocationAndScaleOfLocationNode?(sceneLocationView: self, locationNode: locationNode)
     }
     
     //MARK: ARSCNViewDelegate
@@ -465,15 +469,16 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
     }
     
     public func sessionWasInterrupted(_ session: ARSession) {
-        print("session was interrupted")
+      self.locationDelegate?.sceneLocationViewSessionWasInterrupted?(session);
     }
     
     public func sessionInterruptionEnded(_ session: ARSession) {
-        print("session interruption ended")
+      self.locationDelegate?.sceneLocationViewSessionInterruptionEnded?(session);
     }
     
     public func session(_ session: ARSession, didFailWithError error: Error) {
         print("session did fail with error: \(error)")
+      self.locationDelegate?.sceneLocationViewSession?(session, didFailWithError: error);
     }
     
     public func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
@@ -489,7 +494,7 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
         case .notAvailable:
             print("camera did change tracking state: not available")
         }
-      self.locationDelegate?.sceneLocationViewCameraDidChangeTrackingState(session: session, cameraDidChangeTrackingState: camera);
+      self.locationDelegate?.sceneLocationViewCameraDidChangeTrackingState?(session: session, cameraDidChangeTrackingState: camera);
     }
 }
 

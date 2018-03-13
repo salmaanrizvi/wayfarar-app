@@ -19,7 +19,11 @@ struct NearbyTransit: Codable {
   }
 }
 
-struct Station: Codable {
+func ==(lhs: Station, rhs: Station) -> Bool {
+  return lhs.id == rhs.id;
+}
+
+struct Station: Codable, Equatable {
   var id: String
   var stopName: String
   var borough: String

@@ -68,6 +68,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @objc func didTap(withGestureRecognizer recognizer: UITapGestureRecognizer) {
         let tapLocation = recognizer.location(in: self.sceneView);
         let hitTestResults = self.sceneView.hitTest(tapLocation);
+
         guard let tappedNode = hitTestResults.first?.node else {
             let featurePointHitTest = self.sceneView.hitTest(tapLocation, types: .featurePoint);
             if let result = featurePointHitTest.first {

@@ -27,7 +27,7 @@ class ARTLoaderView: UIView {
     blurView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true;
     
     let loaderFrame = CGRect(origin: .zero, size: CGSize(width: 150.0, height: 150.0));
-    let effect = Effect.growCircle(.black, 8, 3.0, .white);
+    let effect = Effect.growCircle(.black, 8, 2.5, .white);
     let loader = LiquidLoader(frame: loaderFrame, effect: effect);
 
     blurView.contentView.addSubview(loader);

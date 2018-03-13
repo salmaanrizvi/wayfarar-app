@@ -10,7 +10,7 @@ import Foundation
 import CoreLocation
 import MapKit
 
-protocol StationManagerDelegate {
+protocol StationManagerDelegate: class {
   func stationManager(_ manager: StationManager,
                       didUpdateStations stations: [Station]?,
                       withTrains trains: [[Train]]);
@@ -21,17 +21,18 @@ protocol StationManagerDelegate {
 }
 
 public class StationManager: NSObject {
+  static let `default`: StationManager = StationManager();
   
   lazy var locationManager = CLLocationManager();
   lazy var lastFourLocations: [CLLocation] = [];
 
   lazy var trains: [[Train]] = []
   var nearbyTransit: NearbyTransit?
-  var delegate: StationManagerDelegate?
+  weak var delegate: StationManagerDelegate?
   
   public var location: CLLocation? { get { return self.locationManager.location } }
   
-  override init() {
+  private override init() {
     super.init();
     self.locationManager.delegate = self;
   }
@@ -62,6 +63,12 @@ public class StationManager: NSObject {
     }
   }
   
+  func getTrainsFor(station: Station) -> [Train] {
+    guard let stations = self.nearbyTransit?.stations else { return []; }
+    guard let index = stations.index(of: station) else { return []; }
+    return self.trains.get(index: index) ?? [];
+  }
+  
   fileprivate func filterTrainsForStations() {
     guard let nearbyTransit = self.nearbyTransit else { return; }
     self.trains = [];
@@ -78,8 +85,6 @@ public class StationManager: NSObject {
       nFiltered.append(contentsOf: sFiltered);
       self.trains.append(nFiltered);
     });
-    
-    print("Have \(nearbyTransit.stations.count) stations");
   }
 }
 

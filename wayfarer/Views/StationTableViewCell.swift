@@ -49,7 +49,7 @@ class StationTableViewCell: UITableViewCell {
       subview.backgroundColor = .white;
     }
     
-    self.daytimeRouteStack.spacing = (self.containerView.frame.height - 4 * self.daytimeRouteLabel.frame.height) / 4;
+//    self.daytimeRouteStack.spacing = (self.containerView.frame.height - 4 * self.daytimeRouteLabel.frame.height) / 4;
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {

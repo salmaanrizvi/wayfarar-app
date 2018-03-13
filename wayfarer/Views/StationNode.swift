@@ -32,8 +32,8 @@ class StationNode: LocationAnnotationNode {
     let nodeArray = scene.rootNode.childNodes;
     self.update(station: station, userLoc: userLoc, nodes: nodeArray);
   
-    let rotate = SCNAction.repeatForever(SCNAction.rotateBy(x: 0.0, y: CGFloat.pi, z: 0, duration: 2.5))
-    self.annotationNode.runAction(rotate);
+//    let rotate = SCNAction.repeatForever(SCNAction.rotateBy(x: 0.0, y: CGFloat.pi, z: 0, duration: 2.5))
+//    self.annotationNode.runAction(rotate);
 
     self.addChildNode(annotationNode);
   }

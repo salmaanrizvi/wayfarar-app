@@ -31,11 +31,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/ARCL/ARKit+CoreLocation/Source/SceneLocationView.swift"
-            timestampString = "541896857.888602"
+            timestampString = "542415928.502107"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "352"
-            endingLineNumber = "352"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
             landmarkName = "updatePositionAndScaleOfLocationNode(locationNode:initialSetup:animated:duration:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -47,11 +47,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/ARCL/ARKit+CoreLocation/Source/SceneLocationView.swift"
-            timestampString = "541896857.8886631"
+            timestampString = "542415928.502465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
+            startingLineNumber = "439"
+            endingLineNumber = "439"
             landmarkName = "updatePositionAndScaleOfLocationNode(locationNode:initialSetup:animated:duration:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -63,12 +63,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/Pulley/PulleyLib/PulleyViewController.swift"
-            timestampString = "541902316.2844321"
+            timestampString = "542408781.719596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "417"
             endingLineNumber = "417"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wayfarer/Controllers/NearByTableViewController.swift"
+            timestampString = "542602270.217458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "partialRevealDrawerHeight()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
