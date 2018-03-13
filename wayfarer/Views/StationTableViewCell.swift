@@ -77,7 +77,7 @@ class StationTableViewCell: UITableViewCell {
     }
     else { self.distanceLabel.text = "Updating.." }
     
-    let now = Date(timeIntervalSinceNow: -60).timeIntervalSince1970;
+    let now = Date(timeIntervalSinceNow: -15).timeIntervalSince1970;
     let (northbound, nbTowards) = self.getOrderedArrivals(direction: "N", trains, station.stopId, now);
     let (southbound, sbTowards) = self.getOrderedArrivals(direction: "S", trains, station.stopId, now);
 

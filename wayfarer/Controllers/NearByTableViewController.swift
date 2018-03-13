@@ -10,21 +10,21 @@ import UIKit
 import CoreLocation
 import Pulley
 
-class NearByTableViewController: UITableViewController {
+class NearByTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
   lazy var stationManager = StationManager.default;
   
   lazy var stations: [Station] = [];
   lazy var trains: [[Train]] = [];
   
+  
+  @IBOutlet weak var navigationBar: UINavigationBar!
+  @IBOutlet weak var tableView: UITableView!
+    
   override func viewDidLoad() {
     super.viewDidLoad();
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     self.view.backgroundColor = .clear;
-
-    self.refreshControl = UIRefreshControl()
-    self.refreshControl?.addTarget(self, action: #selector(refreshRequested), for: .valueChanged);
-    
-//    stationManager.delegate = self;
-//    stationManager.enableLocationServices();
     
     NotificationCenter.default.addObserver(self, selector: #selector(didReceiveScrollToNotification), name: .ScrollToStationNotification, object: nil);
   }
@@ -39,9 +39,9 @@ class NearByTableViewController: UITableViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  @objc func refreshRequested(_ sender: UIRefreshControl) {
+//  @objc func refreshRequested(_ sender: UIRefreshControl) {
 //    self.stationManager.requestNearbyStations();
-  }
+//  }
 
   @objc func didReceiveScrollToNotification(_ notification: NSNotification) {
     guard let data = notification.object as? [String: Any],
@@ -60,18 +60,18 @@ class NearByTableViewController: UITableViewController {
   }
   
   // MARK: - Table view data source
-  override func numberOfSections(in tableView: UITableView) -> Int {
+  func numberOfSections(in tableView: UITableView) -> Int {
 //    guard self.stationManager.nearbyTransit != nil else { return 0; }
     return 1;
   }
   
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.stations.count;
 //    guard let nearbyTransit = self.stationManager.nearbyTransit else { return 0; }
 //    return nearbyTransit.stations.count
   }
   
-  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: StationTableViewCell.reuseIdentifier, for: indexPath);
 
     guard let stationCell = cell as? StationTableViewCell,
@@ -85,7 +85,7 @@ class NearByTableViewController: UITableViewController {
     return stationCell;
   }
 
-  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return StationTableViewCell.height;
   }
 }
@@ -98,7 +98,7 @@ extension NearByTableViewController: StationManagerDelegate {
   func stationManager(_ manager: StationManager, didUpdateStations stations: [Station]?, withTrains trains: [[Train]]) {
 
     DispatchQueue.main.async {
-      self.refreshControl?.endRefreshing();
+//      self.refreshControl?.endRefreshing();
       self.tableView.reloadData();
     }
   }
@@ -114,7 +114,7 @@ extension NearByTableViewController: PulleyDrawerViewControllerDelegate {
   }
   
   func partialRevealDrawerHeight() -> CGFloat {
-    return StationTableViewCell.height + 60;
+    return StationTableViewCell.height + 57.5;
   }
   
   func supportedDrawerPositions() -> [PulleyPosition] {
