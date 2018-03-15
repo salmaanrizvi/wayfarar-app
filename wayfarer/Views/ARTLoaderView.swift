@@ -17,7 +17,7 @@ class ARTLoaderView: UIView {
     self.alpha = 0.0;
 
     let blurView = UIVisualEffectView(frame: frame);
-    let blurEffect = UIBlurEffect(style: .regular);
+    let blurEffect = UIBlurEffect(style: .prominent);
     blurView.effect = blurEffect;
     blurView.translatesAutoresizingMaskIntoConstraints = false;
     self.addSubview(blurView);
