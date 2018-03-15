@@ -9,4 +9,5 @@ target 'wayfarer' do
   pod 'ARCL', :git => 'https://github.com/ProjectDent/ARKit-CoreLocation', :branch => 'master'
   pod 'LiquidLoader', :git => 'https://github.com/yoavlt/LiquidLoader', :branch => 'master'
   pod 'Pulley'
+  pod 'DateToolsSwift'
 end

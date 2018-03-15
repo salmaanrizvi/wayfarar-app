@@ -90,11 +90,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ARCL/ARCL.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DateToolsSwift/DateToolsSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LiquidLoader/LiquidLoader.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Pulley/Pulley.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/ARCL/ARCL.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DateToolsSwift/DateToolsSwift.framework"
   install_framework "$BUILT_PRODUCTS_DIR/LiquidLoader/LiquidLoader.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Pulley/Pulley.framework"
 fi

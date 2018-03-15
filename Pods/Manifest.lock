@@ -1,10 +1,12 @@
 PODS:
   - ARCL (1.0.2)
+  - DateToolsSwift (2.0.3)
   - LiquidLoader (1.2.1)
   - Pulley (1.4)
 
 DEPENDENCIES:
   - ARCL (from `https://github.com/ProjectDent/ARKit-CoreLocation`, branch `master`)
+  - DateToolsSwift
   - LiquidLoader (from `https://github.com/yoavlt/LiquidLoader`, branch `master`)
   - Pulley
 
@@ -26,9 +28,10 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   ARCL: 81ca9299eec52de30fb6e2b11ea5728e2e0a3c1f
+  DateToolsSwift: bf69bf9056d9e53c5c03f06e51f219b9b8b02f9e
   LiquidLoader: 73adf4f43b260ecb9dae807064e566d72c629dfd
   Pulley: 3d47a5ca819b8f35a63e9a4811d35035d484d1d9
 
-PODFILE CHECKSUM: 76def85a2f3b5df13a618ab6619e5c5a3a107729
+PODFILE CHECKSUM: 11b2628aa43737cdc75bfc175b7116fb60845d06
 
 COCOAPODS: 1.2.0
