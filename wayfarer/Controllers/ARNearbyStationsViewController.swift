@@ -165,6 +165,10 @@ extension ARNearbyStationsViewController: StationManagerDelegate {
   
   func stationManager(_ manager: StationManager, didFailUpdateWithError error: Error) {
     print("failed to update stations with error", error);
+    let alert = UIAlertController(title: "Oops!", message: "Something went wrong. \(error)", preferredStyle: .alert)
+    let okay = UIAlertAction(title: "Okay", style: .default, handler: nil);
+    alert.addAction(okay);
+    self.present(alert);
   }
   
   func stationManager(_ manager: StationManager, updatedHeading heading: CLHeading, andCalculatedHeading calculated: CLLocationDirection?) {

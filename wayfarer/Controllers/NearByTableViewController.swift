@@ -19,7 +19,7 @@ class NearByTableViewController: UIViewController, UITableViewDelegate, UITableV
   
   @IBOutlet weak var navigationBar: UINavigationBar!
   @IBOutlet weak var tableView: UITableView!
-    
+  
   override func viewDidLoad() {
     super.viewDidLoad();
     self.tableView.delegate = self;
@@ -119,11 +119,5 @@ extension NearByTableViewController: PulleyDrawerViewControllerDelegate {
   
   func supportedDrawerPositions() -> [PulleyPosition] {
     return [.closed, .partiallyRevealed];
-  }
-}
-
-extension UITableView {
-  func reloadData(on thread: DispatchQueue) {
-    thread.async { self.reloadData(); }
   }
 }
