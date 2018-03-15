@@ -99,8 +99,8 @@ extension StationManager: CLLocationManagerDelegate {
       return;
     }
     
-    if (-location.timestamp.timeIntervalSinceNow > 10.0) {
-      print("filtering location update older than 5 seconds")
+    if (-location.timestamp.timeIntervalSinceNow > 60.0) {
+      print("filtering location update older than 60 seconds")
       return;
     }
 
