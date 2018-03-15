@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import DateToolsSwift
 
 struct Arrivals: Codable {
   var northbound: [Train]
@@ -122,7 +123,11 @@ struct Stop: Codable, CustomStringConvertible {
   var arrivalTime: TimeInterval
 
   var formattedDate: String {
-    get { return DateFormatter.parseTime(self.arrivalTime); }
+    get {
+      let timeAgo = Date(timeIntervalSince1970: self.arrivalTime).shortTimeAgoSinceNow;
+      return "in " + timeAgo.replacingOccurrences(of: "m", with: " min");
+    }
+    // DateFormatter.parseTime(self.arrivalTime); }
   }
   
   private enum CodingKeys: String, CodingKey {

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit.UIColor
+import CoreLocation.CLLocation
 
 let _ace = ["text": .white, "line": UIColor(hexString: "#0039A6")];
 let _bdfm = ["text": .white, "line": UIColor(hexString: "#FF6319")];
@@ -32,3 +33,4 @@ public let colorMap: [String: [String: UIColor]] = [
   "4": _456, "5": _456, "6": _456, "7": _7
 ];
 
+let MINIMUM_ALTITUDE: CLLocationDistance = 100.0;

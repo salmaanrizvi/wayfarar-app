@@ -38,12 +38,14 @@ struct Station: Codable, Equatable {
 
   lazy var location: CLLocation = {
     let coordinate = CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude);
-    return CLLocation(coordinate: coordinate, altitude: 100);
+    let altitude = StationManager.default.location?.altitude ?? MINIMUM_ALTITUDE
+    return CLLocation(coordinate: coordinate, altitude: altitude);
   }();
   
-  func entranceLoc(to location: CLLocation) -> CLLocation {
+  mutating func entranceLoc(to location: CLLocation) -> CLLocation {
     if (self.entrances.isEmpty) {
-      return CLLocation(latitude: self.latitude, longitude: self.longitude);
+      return self.location;
+//      return CLLocation(latitude: self.latitude, longitude: self.longitude);
     }
     
     var closestEntrance: Entrance?
@@ -58,7 +60,8 @@ struct Station: Codable, Equatable {
       }
     });
     
-    return CLLocation(coordinate: closestEntrance!.location.coordinate, altitude: lowestDistance! / 10);
+    let altitude: CLLocationDistance = min(lowestDistance!, StationManager.default.location?.altitude ?? MINIMUM_ALTITUDE);
+    return CLLocation(coordinate: closestEntrance!.location.coordinate, altitude: altitude);
   }
 
   func nearestEntrance(to location: CLLocation) -> String {
