@@ -14,7 +14,7 @@ struct Profiler {
   mutating func profile(key: String) {
     if let time = self.profiles[key] {
       let elapsedTime = round((Date(timeIntervalSinceNow: 0).timeIntervalSince1970 - time) * 1000.0);
-//      print("\(key) took \(elapsedTime)ms");
+      print("\(key) took \(elapsedTime)ms");
       self.profiles.removeValue(forKey: key);
     }
     else {
