@@ -27,6 +27,8 @@ class NearByTableViewController: UIViewController, UITableViewDelegate, UITableV
     self.view.backgroundColor = .clear;
     
     NotificationCenter.default.addObserver(self, selector: #selector(didReceiveScrollToNotification), name: .ScrollToStationNotification, object: nil);
+    
+    self.tableView.register(UINib(nibName: "NearbyStationTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: NearbyStationTableViewCell.reuseIdentifier);
   }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -72,9 +74,10 @@ class NearByTableViewController: UIViewController, UITableViewDelegate, UITableV
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: StationTableViewCell.reuseIdentifier, for: indexPath);
-
-    guard let stationCell = cell as? StationTableViewCell,
+//    let cell = tableView.dequeueReusableCell(withIdentifier: StationTableViewCell.reuseIdentifier, for: indexPath);
+    let cell = tableView.dequeueReusableCell(withIdentifier: NearbyStationTableViewCell.reuseIdentifier, for: indexPath);
+    
+    guard let stationCell = cell as? NearbyStationTableViewCell, //StationTableViewCell,
           let station = self.stations.get(index: indexPath.row),
           let trains = self.trains.get(index: indexPath.row)
 //          let station = self.stationManager.nearbyTransit?.stations.get(index: indexPath.row),
@@ -86,7 +89,8 @@ class NearByTableViewController: UIViewController, UITableViewDelegate, UITableV
   }
 
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return StationTableViewCell.height;
+//    return StationTableViewCell.height;
+    return NearbyStationTableViewCell.height;
   }
 }
 
@@ -114,7 +118,7 @@ extension NearByTableViewController: PulleyDrawerViewControllerDelegate {
   }
   
   func partialRevealDrawerHeight() -> CGFloat {
-    return StationTableViewCell.height + 57.5;
+    return NearbyStationTableViewCell.height + 60;
   }
   
   func supportedDrawerPositions() -> [PulleyPosition] {
