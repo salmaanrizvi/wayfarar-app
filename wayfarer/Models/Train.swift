@@ -125,7 +125,8 @@ struct Stop: Codable, CustomStringConvertible {
   var formattedDate: String {
     get {
       let timeAgo = Date(timeIntervalSince1970: self.arrivalTime).shortTimeAgoSinceNow;
-      return "in " + timeAgo.replacingOccurrences(of: "m", with: " min");
+      return timeAgo.replacingOccurrences(of: "m", with: " min").replacingOccurrences(of: "s", with: " sec").uppercased();
+//      return "in " + timeAgo.replacingOccurrences(of: "m", with: " min");
     }
     // DateFormatter.parseTime(self.arrivalTime); }
   }
