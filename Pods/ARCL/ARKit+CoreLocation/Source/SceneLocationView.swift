@@ -30,6 +30,8 @@ import MapKit
   @objc optional func sceneLocationViewSessionWasInterrupted(_ session: ARSession);
   @objc optional func sceneLocationViewSessionInterruptionEnded(_ session: ARSession);
   @objc optional func sceneLocationViewSession(_ session: ARSession, didFailWithError error: Error);
+  
+  @objc optional func sceneLocationViewNodeDidMoveIntoView(_ locatioNodes: [LocationNode]);
 }
 
 ///Different methods which can be used when determining locations (such as the user's location).
@@ -466,6 +468,15 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
                 self.addSceneLocationEstimate(location: currentLocation)
             }
         }
+      
+      if let pointOfView = pointOfView {
+        let nodes = self.locationNodes.filter {
+          let insidePov = self.isNode($0, insideFrustumOf: pointOfView);
+          return insidePov;
+        }
+
+        self.locationDelegate?.sceneLocationViewNodeDidMoveIntoView?(nodes);
+      }
     }
     
     public func sessionWasInterrupted(_ session: ARSession) {

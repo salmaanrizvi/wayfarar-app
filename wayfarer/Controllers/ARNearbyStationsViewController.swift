@@ -19,6 +19,7 @@ class ARNearbyStationsViewController: UIViewController {
   
   lazy var sceneLocationView = SceneLocationView();
   lazy var stationManager = StationManager.default;
+  lazy var stationsInView: [Station] = [];
 
   lazy var loader: ARTLoaderView = {
     let _loader = ARTLoaderView(frame: self.view.frame);
@@ -143,6 +144,15 @@ class ARNearbyStationsViewController: UIViewController {
     NotificationCenter.default.post(name: .DrawerNotification, object: object);
   }
   
+  func showStationDetails(_ stations: [Station]) {
+    var trains: [[Train]] = [];
+    for station in stations {
+      trains.append(self.stationManager.getTrainsFor(station: station))
+    }
+    let object: [String: Any] = ["stations": stations, "trains": trains];
+    NotificationCenter.default.post(name: .DrawerNotification, object: object);
+  }
+  
   func hideStationDetail() {
     NotificationCenter.default.post(name: .DrawerNotification, object: nil)
   }
@@ -208,7 +218,7 @@ extension ARNearbyStationsViewController: SceneLocationViewDelegate {
   }
   
   func sceneLocationViewSession(_ session: ARSession, didFailWithError error: Error) {
-    
+    print("scene location view did fail with error \(error)");
   }
   
   func sceneLocationViewCameraDidChangeTrackingState(session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
@@ -226,5 +236,20 @@ extension ARNearbyStationsViewController: SceneLocationViewDelegate {
         print("insufficient features");
         self.hasInitialized = false;
     }
+  }
+  
+  func sceneLocationViewNodeDidMoveIntoView(_ locatioNodes: [LocationNode]) {
+    var stations: [Station] = [];
+    locatioNodes.forEach({
+      if let stationNode = $0 as? StationNode {
+        stations.append(stationNode.station);
+      }
+    });
+    
+    if (stations == self.stationsInView) { return; }
+    if (stations.isEmpty) { self.hideStationDetail(); }
+
+    self.stationsInView = stations;
+    self.showStationDetails(self.stationsInView)
   }
 }

@@ -30,12 +30,14 @@ class PulleyContainerViewController: PulleyViewController {
   }
   
   @objc func didReceiveDrawerNotification(_ notification: NSNotification) {
-    if notification.object != nil {
-      NotificationCenter.default.post(name: .ScrollToStationNotification, object: notification.object);
-      self.setDrawerPosition(position: .partiallyRevealed, animated: true);
-    }
-    else { // close drawer notif
-      self.setDrawerPosition(position: .closed, animated: true);
+    DispatchQueue.main.async {
+      if notification.object != nil {
+        NotificationCenter.default.post(name: .ScrollToStationNotification, object: notification.object);
+        self.setDrawerPosition(position: .partiallyRevealed, animated: true);
+      }
+      else { // close drawer notif
+        self.setDrawerPosition(position: .closed, animated: true);
+      }
     }
   }
 }

@@ -47,41 +47,31 @@ class NearByTableViewController: UIViewController, UITableViewDelegate, UITableV
 
   @objc func didReceiveScrollToNotification(_ notification: NSNotification) {
     guard let data = notification.object as? [String: Any],
-          let station = data["station"] as? Station,
-          let trains = data["trains"] as? [Train]
+          let stations = data["stations"] as? [Station],
+          let trains = data["trains"] as? [[Train]]
     else { return; }
 
-    self.stations = [station];
-    self.trains = [trains];
+    self.stations = stations;
+    self.trains = trains;
     self.tableView.reloadData(on: .main);
-
-//      if let index = self.stationManager.nearbyTransit?.stations.index(of: station) {
-//        let indexPath = IndexPath(row: index, section: 0);
-//        self.tableView.scrollToRow(at: indexPath, at: .top, animated: true);
-//      }
   }
   
   // MARK: - Table view data source
   func numberOfSections(in tableView: UITableView) -> Int {
-//    guard self.stationManager.nearbyTransit != nil else { return 0; }
     return 1;
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.stations.count;
-//    guard let nearbyTransit = self.stationManager.nearbyTransit else { return 0; }
-//    return nearbyTransit.stations.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//    let cell = tableView.dequeueReusableCell(withIdentifier: StationTableViewCell.reuseIdentifier, for: indexPath);
+
     let cell = tableView.dequeueReusableCell(withIdentifier: NearbyStationTableViewCell.reuseIdentifier, for: indexPath);
     
-    guard let stationCell = cell as? NearbyStationTableViewCell, //StationTableViewCell,
+    guard let stationCell = cell as? NearbyStationTableViewCell,
           let station = self.stations.get(index: indexPath.row),
           let trains = self.trains.get(index: indexPath.row)
-//          let station = self.stationManager.nearbyTransit?.stations.get(index: indexPath.row),
-//          let trains = self.stationManager.trains.get(index: indexPath.row)
     else { return cell; }
     
     stationCell.configure(with: station, trains: trains, userLoc: self.stationManager.location);
@@ -89,7 +79,6 @@ class NearByTableViewController: UIViewController, UITableViewDelegate, UITableV
   }
 
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//    return StationTableViewCell.height;
     return NearbyStationTableViewCell.height;
   }
 }
