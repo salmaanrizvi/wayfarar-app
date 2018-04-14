@@ -29,27 +29,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="338" height="197.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEDFORD NOSTRAND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4T-2S-6Ke" userLabel="Station Name">
-                        <rect key="frame" x="9" y="5" width="258" height="20.5"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                        <color key="textColor" red="0.97227032230640986" green="0.97920274172980748" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-Sd-Wx7" userLabel="Color Stripe">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-Sd-Wx7" userLabel="Color Strip">
                         <rect key="frame" x="333" y="0.0" width="5" height="197.5"/>
                         <color key="backgroundColor" red="0.42247134447097778" green="0.74899524450302124" blue="0.27046030759811401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="5" id="pwM-6q-Pax"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO QUEENS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-2m-SAH">
-                        <rect key="frame" x="9" y="74" width="101" height="12"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
-                        <color key="textColor" red="0.4724418534" green="0.47183641230000001" blue="0.48241196069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEDFORD NOSTRAND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4T-2S-6Ke" userLabel="Station Name">
+                        <rect key="frame" x="10" y="5" width="257" height="20.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.97227032230640986" green="0.97920274172980748" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-6A-vp7" userLabel="Train Route N">
-                        <rect key="frame" x="40" y="30.5" width="39" height="39"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="200m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-u9-nns" userLabel="Station Distance">
+                        <rect key="frame" x="287" y="8" width="31" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.97227032229999999" green="0.97920274169999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxD-6A-vp7" userLabel="Northbound Train 1 Route">
+                        <rect key="frame" x="23" y="30.5" width="39" height="39"/>
                         <color key="backgroundColor" red="0.42247134447097778" green="0.74899524450302124" blue="0.27046030759811401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="QxD-6A-vp7" secondAttribute="height" multiplier="1:1" id="wbq-P8-wDc"/>
@@ -61,14 +61,8 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARRIVES IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gQ-SO-YSd">
-                        <rect key="frame" x="118" y="74" width="101" height="12"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
-                        <color key="textColor" red="0.47244185338172456" green="0.47183641225603096" blue="0.48241196065989844" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-Wn-bIo">
-                        <rect key="frame" x="118.5" y="26.5" width="101" height="47.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbg-Wn-bIo" userLabel="Northbound Train 1 Arrival">
+                        <rect key="frame" x="59" y="26.5" width="101.5" height="47.5"/>
                         <attributedString key="attributedText">
                             <fragment content="2">
                                 <attributes>
@@ -95,13 +89,23 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARRIVES IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6X-lt-qyc">
-                        <rect key="frame" x="222" y="74" width="101" height="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO QUEENS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3K0-2m-SAH" userLabel="Northbound Train 1 Direction">
+                        <rect key="frame" x="23" y="74" width="137" height="12"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
                         <color key="textColor" red="0.4724418534" green="0.47183641230000001" blue="0.48241196069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-8O-SUa">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWr-jZ-wDQ" userLabel="Northbound Train 2 Route">
+                        <rect key="frame" x="183.5" y="30" width="39" height="39"/>
+                        <color key="backgroundColor" red="0.42247134450000001" green="0.74899524449999999" blue="0.27046030760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFr-8O-SUa" userLabel="Northbound Train 2 Arrival">
                         <rect key="frame" x="222" y="26.5" width="101" height="48"/>
                         <attributedString key="attributedText">
                             <fragment content="12">
@@ -129,12 +133,18 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO QUEENS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BJ-sx-rkz" userLabel="Northbound Train 2 Direction">
+                        <rect key="frame" x="183.5" y="74" width="139.5" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.4724418534" green="0.47183641230000001" blue="0.48241196069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8V-aY-L1J" userLabel="Divider">
                         <rect key="frame" x="0.0" y="98" width="338" height="1.5"/>
                         <color key="backgroundColor" red="0.11003663390874863" green="0.12139376252889633" blue="0.13333511352539062" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="204-y9-upz" userLabel="Train Route S">
-                        <rect key="frame" x="39.5" y="128.5" width="39" height="39.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="204-y9-upz" userLabel="Southbound Train 1 Route">
+                        <rect key="frame" x="22.5" y="128.5" width="39" height="39.5"/>
                         <color key="backgroundColor" red="0.42247134450000001" green="0.74899524449999999" blue="0.27046030760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,14 +153,8 @@
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO BROOKLYN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhV-8m-N0e">
-                        <rect key="frame" x="8" y="171.5" width="101" height="12"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
-                        <color key="textColor" red="0.4724418534" green="0.47183641230000001" blue="0.48241196069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0B-q1-N4t">
-                        <rect key="frame" x="118" y="124.5" width="101" height="47.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0B-q1-N4t" userLabel="Southbound Train 1 Arrival">
+                        <rect key="frame" x="59" y="124" width="101.5" height="47.5"/>
                         <attributedString key="attributedText">
                             <fragment content="6">
                                 <attributes>
@@ -177,13 +181,23 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARRIVES IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8W-5f-sgt">
-                        <rect key="frame" x="118" y="172" width="101" height="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO BROOKLYN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhV-8m-N0e" userLabel="Southbound Train 1 Direction">
+                        <rect key="frame" x="22.5" y="173" width="138.5" height="12"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
                         <color key="textColor" red="0.4724418534" green="0.47183641230000001" blue="0.48241196069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1g-Od-rKF">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxH-z0-xaq" userLabel="Southbound Train 2 Route">
+                        <rect key="frame" x="183.5" y="128.5" width="39" height="39.5"/>
+                        <color key="backgroundColor" red="0.42247134450000001" green="0.74899524449999999" blue="0.27046030760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1g-Od-rKF" userLabel="Southbound Train 2 Arrival">
                         <rect key="frame" x="222" y="124.5" width="101" height="48"/>
                         <attributedString key="attributedText">
                             <fragment content="18">
@@ -211,16 +225,10 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARRIVES IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lv-kv-Wig">
-                        <rect key="frame" x="222" y="171.5" width="101" height="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO BROOKLYN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wf-1J-Vdj" userLabel="Southbound Train 2 Direction">
+                        <rect key="frame" x="183.5" y="173" width="139.5" height="12"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
                         <color key="textColor" red="0.4724418534" green="0.47183641230000001" blue="0.48241196069999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="200m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2M-u9-nns" userLabel="distance">
-                        <rect key="frame" x="287" y="8" width="31" height="14"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                        <color key="textColor" red="0.97227032229999999" green="0.97920274169999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -228,55 +236,58 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="E7V-Sd-Wx7" secondAttribute="trailing" id="13x-TL-9dq"/>
                     <constraint firstItem="E0B-q1-N4t" firstAttribute="width" secondItem="wbg-Wn-bIo" secondAttribute="width" id="19P-dJ-G3V"/>
-                    <constraint firstItem="o6X-lt-qyc" firstAttribute="centerX" secondItem="lFr-8O-SUa" secondAttribute="centerX" id="37R-Dn-mJo"/>
+                    <constraint firstItem="EhV-8m-N0e" firstAttribute="top" secondItem="204-y9-upz" secondAttribute="bottom" constant="5" id="2CF-Ua-nGP"/>
+                    <constraint firstItem="3BJ-sx-rkz" firstAttribute="leading" secondItem="vWr-jZ-wDQ" secondAttribute="leading" id="2dH-K4-Cen"/>
+                    <constraint firstItem="U4T-2S-6Ke" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4wK-aB-IUY"/>
                     <constraint firstItem="204-y9-upz" firstAttribute="height" secondItem="QxD-6A-vp7" secondAttribute="height" id="7gX-8n-DiP"/>
-                    <constraint firstItem="q8W-5f-sgt" firstAttribute="centerX" secondItem="E0B-q1-N4t" secondAttribute="centerX" id="9CI-r3-oCM"/>
+                    <constraint firstItem="3wf-1J-Vdj" firstAttribute="centerY" secondItem="EhV-8m-N0e" secondAttribute="centerY" id="AEe-jz-uyT"/>
                     <constraint firstItem="wbg-Wn-bIo" firstAttribute="centerY" secondItem="QxD-6A-vp7" secondAttribute="centerY" id="Bjb-FP-78G"/>
+                    <constraint firstItem="3wf-1J-Vdj" firstAttribute="trailing" secondItem="W1g-Od-rKF" secondAttribute="trailing" id="COi-p8-jlF"/>
                     <constraint firstItem="204-y9-upz" firstAttribute="centerX" secondItem="QxD-6A-vp7" secondAttribute="centerX" id="Cwc-wg-J9X"/>
+                    <constraint firstItem="vWr-jZ-wDQ" firstAttribute="width" secondItem="QxD-6A-vp7" secondAttribute="width" id="D7F-Sl-MoY"/>
                     <constraint firstItem="lFr-8O-SUa" firstAttribute="centerY" secondItem="wbg-Wn-bIo" secondAttribute="centerY" id="Dyl-aY-fce"/>
-                    <constraint firstItem="wbg-Wn-bIo" firstAttribute="bottom" secondItem="9gQ-SO-YSd" secondAttribute="top" id="FkQ-1s-fFt"/>
                     <constraint firstItem="E0B-q1-N4t" firstAttribute="centerY" secondItem="204-y9-upz" secondAttribute="centerY" id="G6w-50-TGK"/>
                     <constraint firstItem="D8V-aY-L1J" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.01" id="HbK-Zy-wBy"/>
-                    <constraint firstItem="9gQ-SO-YSd" firstAttribute="centerX" secondItem="wbg-Wn-bIo" secondAttribute="centerX" id="INc-uH-cgq"/>
-                    <constraint firstItem="EhV-8m-N0e" firstAttribute="centerX" secondItem="204-y9-upz" secondAttribute="centerX" id="IRE-gX-yTb"/>
                     <constraint firstItem="E0B-q1-N4t" firstAttribute="centerX" secondItem="wbg-Wn-bIo" secondAttribute="centerX" id="Ibi-67-vA2"/>
-                    <constraint firstItem="9gQ-SO-YSd" firstAttribute="width" secondItem="wbg-Wn-bIo" secondAttribute="width" id="Iko-H0-CHP"/>
+                    <constraint firstItem="3K0-2m-SAH" firstAttribute="leading" secondItem="QxD-6A-vp7" secondAttribute="leading" id="Ien-bH-Vd9"/>
+                    <constraint firstItem="3wf-1J-Vdj" firstAttribute="leading" secondItem="sxH-z0-xaq" secondAttribute="leading" id="Ii6-8P-KEm"/>
+                    <constraint firstItem="3BJ-sx-rkz" firstAttribute="trailing" secondItem="lFr-8O-SUa" secondAttribute="trailing" id="Iyf-tV-FqZ"/>
+                    <constraint firstItem="EhV-8m-N0e" firstAttribute="trailing" secondItem="E0B-q1-N4t" secondAttribute="trailing" id="Ked-Eu-esf"/>
                     <constraint firstItem="QxD-6A-vp7" firstAttribute="top" secondItem="U4T-2S-6Ke" secondAttribute="bottom" constant="5" id="MDp-jh-Coj"/>
                     <constraint firstItem="W1g-Od-rKF" firstAttribute="width" secondItem="lFr-8O-SUa" secondAttribute="width" id="Mei-bc-Yog"/>
-                    <constraint firstItem="o6X-lt-qyc" firstAttribute="width" secondItem="lFr-8O-SUa" secondAttribute="width" id="N3y-qC-1QB"/>
                     <constraint firstItem="I2M-u9-nns" firstAttribute="centerY" secondItem="U4T-2S-6Ke" secondAttribute="centerY" id="Nlj-Vx-jWW"/>
-                    <constraint firstItem="U4T-2S-6Ke" firstAttribute="leading" secondItem="3K0-2m-SAH" secondAttribute="leading" id="PN7-JQ-Bkb"/>
-                    <constraint firstItem="9gQ-SO-YSd" firstAttribute="bottom" secondItem="o6X-lt-qyc" secondAttribute="bottom" id="QGL-xr-Hsg"/>
-                    <constraint firstItem="3K0-2m-SAH" firstAttribute="width" secondItem="9gQ-SO-YSd" secondAttribute="width" id="QcD-FQ-bxN"/>
+                    <constraint firstItem="EhV-8m-N0e" firstAttribute="leading" secondItem="204-y9-upz" secondAttribute="leading" id="NsV-bx-kAQ"/>
+                    <constraint firstItem="vWr-jZ-wDQ" firstAttribute="height" secondItem="QxD-6A-vp7" secondAttribute="height" id="QWB-b4-Ymj"/>
                     <constraint firstItem="204-y9-upz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.5" id="Qcd-cS-7qR"/>
+                    <constraint firstItem="vWr-jZ-wDQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="1.2" id="QtA-UB-Vk4"/>
                     <constraint firstItem="E7V-Sd-Wx7" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="R7N-3P-lcz"/>
-                    <constraint firstItem="1Lv-kv-Wig" firstAttribute="centerX" secondItem="W1g-Od-rKF" secondAttribute="centerX" id="SJJ-Fk-Oz0"/>
-                    <constraint firstItem="1Lv-kv-Wig" firstAttribute="centerY" secondItem="q8W-5f-sgt" secondAttribute="centerY" id="T54-49-m2z"/>
                     <constraint firstItem="D8V-aY-L1J" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="UEt-D8-qyN"/>
                     <constraint firstItem="QxD-6A-vp7" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.2" id="UOa-Ge-fah"/>
                     <constraint firstItem="E7V-Sd-Wx7" firstAttribute="leading" secondItem="lFr-8O-SUa" secondAttribute="trailing" constant="10" id="Uyf-Co-ab4"/>
+                    <constraint firstItem="sxH-z0-xaq" firstAttribute="width" secondItem="sxH-z0-xaq" secondAttribute="height" multiplier="1:1" id="V8d-DH-wHC"/>
                     <constraint firstItem="I2M-u9-nns" firstAttribute="leading" secondItem="U4T-2S-6Ke" secondAttribute="trailing" constant="20" id="VTy-j3-7JL"/>
                     <constraint firstItem="D8V-aY-L1J" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZSG-VB-izh"/>
-                    <constraint firstItem="3K0-2m-SAH" firstAttribute="centerX" secondItem="QxD-6A-vp7" secondAttribute="centerX" id="aJb-co-z2N"/>
                     <constraint firstItem="QxD-6A-vp7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.5" id="aTg-RF-ISn"/>
                     <constraint firstItem="E7V-Sd-Wx7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cRC-rt-TnW"/>
                     <constraint firstItem="wbg-Wn-bIo" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="gqE-JY-hh3"/>
                     <constraint firstItem="U4T-2S-6Ke" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ha3-V2-HRO"/>
-                    <constraint firstItem="1Lv-kv-Wig" firstAttribute="width" secondItem="W1g-Od-rKF" secondAttribute="width" id="i8I-7P-4Cm"/>
                     <constraint firstItem="W1g-Od-rKF" firstAttribute="centerX" secondItem="lFr-8O-SUa" secondAttribute="centerX" id="jdf-8z-v9o"/>
-                    <constraint firstItem="QxD-6A-vp7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.35" id="mz5-uG-Kdl"/>
-                    <constraint firstItem="q8W-5f-sgt" firstAttribute="width" secondItem="E0B-q1-N4t" secondAttribute="width" id="nLc-IC-6CQ"/>
-                    <constraint firstItem="wbg-Wn-bIo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ncS-yA-Tya"/>
+                    <constraint firstItem="3BJ-sx-rkz" firstAttribute="centerY" secondItem="3K0-2m-SAH" secondAttribute="centerY" id="k4P-UR-3Rh"/>
+                    <constraint firstItem="vWr-jZ-wDQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.5" id="lid-a5-MSR"/>
+                    <constraint firstItem="QxD-6A-vp7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.25" id="mz5-uG-Kdl"/>
+                    <constraint firstItem="wbg-Wn-bIo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.65" id="ncS-yA-Tya"/>
+                    <constraint firstItem="3K0-2m-SAH" firstAttribute="trailing" secondItem="wbg-Wn-bIo" secondAttribute="trailing" id="o8D-WW-lU2"/>
                     <constraint firstItem="204-y9-upz" firstAttribute="width" secondItem="204-y9-upz" secondAttribute="height" multiplier="1:1" id="oV5-Gq-nuH"/>
-                    <constraint firstItem="3K0-2m-SAH" firstAttribute="bottom" secondItem="9gQ-SO-YSd" secondAttribute="bottom" id="p5h-vR-bBH"/>
                     <constraint firstItem="lFr-8O-SUa" firstAttribute="width" secondItem="wbg-Wn-bIo" secondAttribute="width" id="qQG-QF-9pO"/>
                     <constraint firstItem="D8V-aY-L1J" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="qoG-DL-p4L"/>
+                    <constraint firstItem="sxH-z0-xaq" firstAttribute="width" secondItem="vWr-jZ-wDQ" secondAttribute="width" id="qtI-Ye-t4s"/>
+                    <constraint firstItem="sxH-z0-xaq" firstAttribute="height" secondItem="vWr-jZ-wDQ" secondAttribute="height" id="rON-Yv-Aj7"/>
                     <constraint firstItem="W1g-Od-rKF" firstAttribute="centerY" secondItem="E0B-q1-N4t" secondAttribute="centerY" id="sKd-Re-PHU"/>
-                    <constraint firstItem="EhV-8m-N0e" firstAttribute="width" secondItem="q8W-5f-sgt" secondAttribute="width" id="u9A-e6-VJs"/>
-                    <constraint firstItem="EhV-8m-N0e" firstAttribute="centerY" secondItem="q8W-5f-sgt" secondAttribute="centerY" id="uJl-q7-vnm"/>
-                    <constraint firstItem="q8W-5f-sgt" firstAttribute="top" secondItem="E0B-q1-N4t" secondAttribute="bottom" id="uRD-4V-ln0"/>
                     <constraint firstItem="204-y9-upz" firstAttribute="width" secondItem="QxD-6A-vp7" secondAttribute="width" id="uTI-Mt-uBh"/>
+                    <constraint firstItem="sxH-z0-xaq" firstAttribute="centerX" secondItem="vWr-jZ-wDQ" secondAttribute="centerX" id="unO-ph-yVl"/>
+                    <constraint firstItem="sxH-z0-xaq" firstAttribute="centerY" secondItem="204-y9-upz" secondAttribute="centerY" id="wNP-yl-b3J"/>
                     <constraint firstItem="E7V-Sd-Wx7" firstAttribute="leading" secondItem="I2M-u9-nns" secondAttribute="trailing" constant="15" id="xdS-n8-gis"/>
+                    <constraint firstItem="3K0-2m-SAH" firstAttribute="top" secondItem="QxD-6A-vp7" secondAttribute="bottom" constant="5" id="zqG-v1-3DD"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -285,11 +296,15 @@
                 <outlet property="distanceLabel" destination="I2M-u9-nns" id="dDE-hP-GnW"/>
                 <outlet property="nbDirectionLabel" destination="3K0-2m-SAH" id="zAP-0b-Rjd"/>
                 <outlet property="nbFirstArrival" destination="wbg-Wn-bIo" id="JKe-bq-iBz"/>
-                <outlet property="nbSecondArrival" destination="lFr-8O-SUa" id="VmT-a8-vNc"/>
+                <outlet property="nbSecondArrival" destination="lFr-8O-SUa" id="40u-gC-eL8"/>
+                <outlet property="nbTrainDirection_2" destination="3BJ-sx-rkz" id="gOI-PL-q2G"/>
                 <outlet property="nbTrainRouteLabel" destination="QxD-6A-vp7" id="CFG-aK-mfL"/>
+                <outlet property="nbTrainRouteLabel_2" destination="vWr-jZ-wDQ" id="xZh-90-XTO"/>
                 <outlet property="sbDirectionLabel" destination="EhV-8m-N0e" id="vg2-2N-xbK"/>
+                <outlet property="sbDirectionLabel_2" destination="3wf-1J-Vdj" id="E1a-Jd-x5C"/>
                 <outlet property="sbFirstArrival" destination="E0B-q1-N4t" id="bOx-7U-fN7"/>
                 <outlet property="sbSecondArrival" destination="W1g-Od-rKF" id="41i-24-OH2"/>
+                <outlet property="sbTrainRotueLabel_2" destination="sxH-z0-xaq" id="9WO-Tg-GS1"/>
                 <outlet property="sbTrainRouteLabel" destination="204-y9-upz" id="slE-wf-B7P"/>
                 <outlet property="stationLabel" destination="U4T-2S-6Ke" id="ALx-A0-CXF"/>
             </connections>

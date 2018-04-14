@@ -10,4 +10,7 @@ target 'wayfarer' do
   pod 'LiquidLoader', :git => 'https://github.com/yoavlt/LiquidLoader', :branch => 'master'
   pod 'Pulley'
   pod 'DateToolsSwift'
+
+  pod 'Fabric'
+  pod 'Crashlytics'
 end

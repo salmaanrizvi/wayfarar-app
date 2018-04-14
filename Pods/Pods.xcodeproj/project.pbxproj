@@ -7,69 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02DFC32A6F5F0F284BAC129FC864D598 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A662519B9857143B6810347A3E4D2D7A /* CircularGradientLayer.swift */; };
-		09B013081854D594C0C71BC253E006DB /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E78A04D62512627A9000318D9E303FE /* UIColorEx.swift */; };
-		1507FC8CC3F58E6115DDC880164D9FCB /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C63C1128C93807BA6BDCAE38A38A5E /* PulleyPassthroughScrollView.swift */; };
-		1BECA648ABB94F3A5041ADC33B3D566D /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3FD181C4F754CC0065C52FB9CF0B3C /* CGRectEx.swift */; };
+		02DFC32A6F5F0F284BAC129FC864D598 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7817EA9C1F473361134F8AF988800A83 /* CircularGradientLayer.swift */; };
+		09B013081854D594C0C71BC253E006DB /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8708A50BD63810F18DA558ECB2D89BA /* UIColorEx.swift */; };
+		1507FC8CC3F58E6115DDC880164D9FCB /* PulleyPassthroughScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36636899F24A72E2E2D30D625406E859 /* PulleyPassthroughScrollView.swift */; };
+		1BECA648ABB94F3A5041ADC33B3D566D /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5C1C302294D7442258ECBE69005AC1 /* CGRectEx.swift */; };
 		21F43CB5984F863FF6BC0F875CB62CFB /* Pods-wayfarer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 448E91511E31149C544015506B037EB2 /* Pods-wayfarer-dummy.m */; };
 		2518B47E0F11D166F5207B96C1EFB53B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
-		259E6825CC14DA2AEDB5BE8E46AC6923 /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E06962EDBD1174D094B6D2FBB6D3B81B /* LiquidLoader-dummy.m */; };
+		259E6825CC14DA2AEDB5BE8E46AC6923 /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFD647433EED6E4F80ADBB35ECD1954 /* LiquidLoader-dummy.m */; };
 		28EC0932BA96D04D97B5157DBB6FA412 /* Pods-wayfarer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3B7D741DE8B71983189DA6F83F265B /* Pods-wayfarer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BC39A33E21B7A8820E4B2FE48723FB5 /* DateToolsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9195221CFBF9602E1363D11FA4D8A36F /* DateToolsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		328C76F7B2887FF1938F79F7FDD56154 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451D2204AC93C01A294FC7D8B86A3035 /* SceneLocationEstimate.swift */; };
+		2BC39A33E21B7A8820E4B2FE48723FB5 /* DateToolsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1DDDB4BC3F7FDE7F5B8D77B5DFD077 /* DateToolsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		328C76F7B2887FF1938F79F7FDD56154 /* SceneLocationEstimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C015F38865EA183ABAC9D9DB4410D5B /* SceneLocationEstimate.swift */; };
 		34F2F80D3047DFBFF52DA50C9675F124 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79673D96BCDFF236A244E406A373381E /* CoreLocation.framework */; };
-		39896AD7E2573C35F4A82C5EB8F04655 /* TimePeriodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD544B22F3BAC8D542FF7FD66D84F5F2 /* TimePeriodGroup.swift */; };
+		39896AD7E2573C35F4A82C5EB8F04655 /* TimePeriodGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586FEE870F021967C4FE26B95A71BEFE /* TimePeriodGroup.swift */; };
 		3B10E6A662F9E018D394779552F21C4C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05254A0C94E2D62E88562D48C26C7979 /* MapKit.framework */; };
 		3FDAE56B3BDF7A5B8BF41D8FDC156E78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */; };
-		436181E53F5BA4A2B459EDD990E37E4A /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA1674316E54D48B266205049729F1 /* ARCL-dummy.m */; };
-		49EAF74DE185FED5DB7F8484E637FE7E /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B96E3D95AEBE4937FC6B3052A2D6792 /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AEA03365E6DFD3203288595698AB8CC /* Date+Inits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE0591E9F715D35CAFF1597D1513B1B /* Date+Inits.swift */; };
+		436181E53F5BA4A2B459EDD990E37E4A /* ARCL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E554A8D61BBB9CC3344204037B6E824 /* ARCL-dummy.m */; };
+		49EAF74DE185FED5DB7F8484E637FE7E /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF28D011B5E64690DF4950CF381FDA9 /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AEA03365E6DFD3203288595698AB8CC /* Date+Inits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1D3400F15ADDA3895937C3C58E0DF6 /* Date+Inits.swift */; };
 		4AEB4B2691C7649509E297550192F03B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
-		4C805C7E718586EBEF09ABAA11BB9226 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447F8BDEF1EA0F06EFDBC288C68056D8 /* LiquittableCircle.swift */; };
-		4E5E70335AC94377291526163247B72A /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7930293C30C81462A145BE9EFD38BE66 /* Date+Format.swift */; };
-		502C696B976C6895FAFBBAA4B881696D /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0CA088D81975ECAED9F46D007C49C3 /* LiquidLoader.swift */; };
-		563A18A4003D535DE5E75AA05B342ADB /* DateToolsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D56CA60858C8C0DCEEB987569BAE31 /* DateToolsSwift-dummy.m */; };
-		5C97B56B7994F1393537B4488ADE0FB3 /* TimePeriodCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72704ABC6D6DD9C756DA8C3F8B3ADFC3 /* TimePeriodCollection.swift */; };
+		4C805C7E718586EBEF09ABAA11BB9226 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CE4144BAFA8B5D66F40502795227C7 /* LiquittableCircle.swift */; };
+		4E5E70335AC94377291526163247B72A /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92769A7BCC5D4055DB3F20C88242A2 /* Date+Format.swift */; };
+		502C696B976C6895FAFBBAA4B881696D /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1434082E0CDD3906AA84B7ACFD303 /* LiquidLoader.swift */; };
+		563A18A4003D535DE5E75AA05B342ADB /* DateToolsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA32E2F434CC756BCD412FDD8D0B0BBF /* DateToolsSwift-dummy.m */; };
+		5C97B56B7994F1393537B4488ADE0FB3 /* TimePeriodCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22834271A11C0D399B68CEC184100D /* TimePeriodCollection.swift */; };
 		5DDA9740525C37BAC2A6AF8FAA792A14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
-		5E516EEEB94BB900187FDFA3CC2E9FB4 /* Date+Manipulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A102D4B10CA1082CB1BB2C2B816211C /* Date+Manipulations.swift */; };
-		64C9F4903A26546EA0BB3B3A899CF915 /* Date+Comparators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439F47A9FC423591B56EA0DC7ACE395B /* Date+Comparators.swift */; };
-		6565AF761DA8424C0BAAA277EAE06F3D /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10301B142ADBEDF0C8B4DA7AE9287D14 /* ArrayEx.swift */; };
-		6A0507497F0419B6E24146DB4DD3168A /* TimePeriodChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2132A3B1F2EA353FF448133C4B81E0 /* TimePeriodChain.swift */; };
-		6A23697E3630FE875F1CE7A834A12885 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB626CE5A4B707E7262215DD5450270 /* CGPoint+Extensions.swift */; };
+		5E516EEEB94BB900187FDFA3CC2E9FB4 /* Date+Manipulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA8DF9F8DA22EE0F3DB65494544B312 /* Date+Manipulations.swift */; };
+		64C9F4903A26546EA0BB3B3A899CF915 /* Date+Comparators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA033E127A97131D6DD616D0F49E07C /* Date+Comparators.swift */; };
+		6565AF761DA8424C0BAAA277EAE06F3D /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCAB919DAF7C5964C3050395F76598 /* ArrayEx.swift */; };
+		6A0507497F0419B6E24146DB4DD3168A /* TimePeriodChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8915B5A76482C168C80B96AF110213 /* TimePeriodChain.swift */; };
+		6A23697E3630FE875F1CE7A834A12885 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B261134BA4369380963C8D3FDF41CAD8 /* CGPoint+Extensions.swift */; };
 		6DEABB858932B7F6FBB14FBE19F0DFB6 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1133D82C30562AE07C12D04C3EA63E32 /* ARKit.framework */; };
-		6E7D1D65F26E071B668B6C38CE547C8E /* Date+TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A166E81CF32E419E25C93878E2C7E4 /* Date+TimeAgo.swift */; };
-		6E9601E984C4D1F5319E168150F1D1B9 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E28F9B93B17BDA4A4B61CE2F712729 /* SCNNode+Extensions.swift */; };
-		7203568427FC66ACEFB34A9BFFE6C942 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0781F04349F794AFCDE4501B73C1A4DD /* LiquidUtil.swift */; };
-		7E214852DF7DBB76DA7FCEA9744F5D6B /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9CD427A1366BA4866AA2CA8AE9729F /* SceneLocationEstimate+Extensions.swift */; };
-		7F49A81CFBF95501CAEFE56D3E7672A3 /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CAA04C5260CA8DAB9A6E879D292DDD68 /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		851629CFF167B0D92C5C5F754E7D3E58 /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D10C8F12370F489591304753670049CB /* Pulley-dummy.m */; };
-		8D20FB41CD4383862ECF3223276F21C0 /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAFD8FD0DD20AEA753F2DB910856BC9 /* LiquidCircleEffect.swift */; };
-		94AEB317771173DC21512A973919A41D /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D935E4D9C326DA5BFA0BA3A1F84C869C /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99E3BEA8FC5191DC18AF7BF32A6E9086 /* Date+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B383FB17A176EBA923B80BB3806D9C /* Date+Bundle.swift */; };
-		AAB052ACD1C2F5CD61EA09A67BE5938F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB96C819F304906C21143751B8D2FD3 /* Enums.swift */; };
+		6E7D1D65F26E071B668B6C38CE547C8E /* Date+TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34B79AC006D3ECF8476109EE943CE55 /* Date+TimeAgo.swift */; };
+		6E9601E984C4D1F5319E168150F1D1B9 /* SCNNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCC0AC5E1467A8B637D9B7927113DB7 /* SCNNode+Extensions.swift */; };
+		7203568427FC66ACEFB34A9BFFE6C942 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077531950FE398F4294C2F0A5D92DB7 /* LiquidUtil.swift */; };
+		7E214852DF7DBB76DA7FCEA9744F5D6B /* SceneLocationEstimate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326C5CD38BF7F718178F144E5A81AD8 /* SceneLocationEstimate+Extensions.swift */; };
+		7F49A81CFBF95501CAEFE56D3E7672A3 /* Pulley-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86CB898E54264F92812807D2120AF579 /* Pulley-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		851629CFF167B0D92C5C5F754E7D3E58 /* Pulley-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5424BB0E9CE527FF7FB270D6562852CB /* Pulley-dummy.m */; };
+		8D20FB41CD4383862ECF3223276F21C0 /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95820C156905E11076F24619955BA5EF /* LiquidCircleEffect.swift */; };
+		94AEB317771173DC21512A973919A41D /* ARCL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7986FFCB61B673CD1F56961D0496392 /* ARCL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E3BEA8FC5191DC18AF7BF32A6E9086 /* Date+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56085B08CF07602FB35D3E3215D7D181 /* Date+Bundle.swift */; };
+		AAB052ACD1C2F5CD61EA09A67BE5938F /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6895545F1A1831EA3FD66000AC6081 /* Enums.swift */; };
 		ACD719013B6B80EACBE2DD66733C9577 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B1FA7F0F7D87A94D0B9B1BE4250930 /* SceneKit.framework */; };
-		AD783CE87F723A45D01F0FE01AE2C8C1 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9A06CFC41A31F3D27DCDB8C2CEAEBC /* SimpleCircleLiquidEngine.swift */; };
-		AFBF191BAEBFE7616C59E588E0D2BA74 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FD5DFE48EEDF0FE5984019F6CF0756 /* LocationNode.swift */; };
-		B04FE24ECC9F5A898C16EF14F71AE1E9 /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26F21725CC3B3AB5004C0A6D228D9AA /* LiquidLoadEffect.swift */; };
-		B072DE1BA1CE1837F2534F52B659A4D8 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0124E35CD4CEA3D9BBD51CA46EFB5EBF /* CGPointEx.swift */; };
-		B0A382528DC015EFD81F39C35D669F8E /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FED0D1907F4129E44EB6268BCCF25B /* TimePeriod.swift */; };
-		B56F10623F5BD6F885457C00FBF133B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3B591C7F3552D0A06E42027271445 /* LocationManager.swift */; };
-		BBA55D760FA45CCF274A1BDACACAA78A /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515428C17A8E4BACDA2DBAB3D637FAA /* ObjC.swift */; };
-		C0BA12E6FF13BCD3D8129522B3BC6ACF /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC5EB4FB43547CA6F3F4E58E5C365283 /* DateTools.bundle */; };
-		C4FC987CF150C9C4166AFAC1B7F3ACF9 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA29DBFFEEA141CABDFF56DB88785CDA /* SCNVector3+Extensions.swift */; };
+		AD783CE87F723A45D01F0FE01AE2C8C1 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE414AD64CC70BD055FE8470525A96F8 /* SimpleCircleLiquidEngine.swift */; };
+		AFBF191BAEBFE7616C59E588E0D2BA74 /* LocationNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B9FACDA9D35489969C467FFE686D3 /* LocationNode.swift */; };
+		B04FE24ECC9F5A898C16EF14F71AE1E9 /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE484A71892448356D9980C64FC68D4 /* LiquidLoadEffect.swift */; };
+		B072DE1BA1CE1837F2534F52B659A4D8 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EC5B78161A9957682230FCC59C806C /* CGPointEx.swift */; };
+		B0A382528DC015EFD81F39C35D669F8E /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128DA697A079436DA83B8E23C31A3AE /* TimePeriod.swift */; };
+		B56F10623F5BD6F885457C00FBF133B5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3034D27DA17760B80D4E06E805B666 /* LocationManager.swift */; };
+		BBA55D760FA45CCF274A1BDACACAA78A /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39447FC228EB78977624A3DB0B8D5C7C /* ObjC.swift */; };
+		C0BA12E6FF13BCD3D8129522B3BC6ACF /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5492D4056DB051C5BD6AEF1B3A76D2A2 /* DateTools.bundle */; };
+		C4FC987CF150C9C4166AFAC1B7F3ACF9 /* SCNVector3+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80356159605FE7DDEF7418ECC3AEC719 /* SCNVector3+Extensions.swift */; };
 		CFFEFCE8DBE78C7F70AA91A120A46D5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
 		D08BD6DE0BB9C717CFD66420C36B6EC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */; };
-		D8FBC9AEF37132E4B5ABD1A6BC1FD1D5 /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D26007D5A062EC45008E400F47A0D6 /* LiquidLineEffect.swift */; };
-		DA0E7D89130839EA8B589B5A57DA4B28 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EEAA3ABFA2EC766B88A3E2EADB993 /* CLLocation+Extensions.swift */; };
-		DA770B19AF7C2D1F934DE2A5CD6C617C /* TimeChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD0A6B5F171AC83CEFA50085B0E3F33 /* TimeChunk.swift */; };
-		DFF1957B63D91AF9BDDE95C5F9B56CE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB53FA2F3AD7EA910081F3D59851D90A /* Constants.swift */; };
-		E1A18D0CD71924F04F7D061934FECA18 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD561DA6C38F31634747F3388BE624 /* FloatingPoint+Radians.swift */; };
-		E82AA94A7A946AE024400619B685F21D /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119C263ABC3DF1CEB7FB0614E64FE616 /* UIView+Grow.swift */; };
-		EED12DA3B3BD6B6598A327DEF7D28817 /* Integer+DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4920E1E770DEC2CC367D7404C29F981C /* Integer+DateTools.swift */; };
-		EF8A83F94EDB6C7C42F36FFF618D0526 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51C8BE44405BA439DC57A95F44AD5D7 /* Date+Components.swift */; };
-		F286B003B935CFD89B8AC2B1023ECE8A /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4339C616859E95A28EDBC7B63FC0B2AD /* SceneLocationView.swift */; };
+		D8FBC9AEF37132E4B5ABD1A6BC1FD1D5 /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D8C6956428940593A69B1E1A1143A4 /* LiquidLineEffect.swift */; };
+		DA0E7D89130839EA8B589B5A57DA4B28 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C01366A84C0C4DF2E8B3D569A0EA78 /* CLLocation+Extensions.swift */; };
+		DA770B19AF7C2D1F934DE2A5CD6C617C /* TimeChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E949C77B5DE97A86E323C6B9E611AC /* TimeChunk.swift */; };
+		DFF1957B63D91AF9BDDE95C5F9B56CE6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7298BF791A1B4EB9350199E0CB379353 /* Constants.swift */; };
+		E1A18D0CD71924F04F7D061934FECA18 /* FloatingPoint+Radians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFFFB5A8AB937735EE07178A6055E8 /* FloatingPoint+Radians.swift */; };
+		E82AA94A7A946AE024400619B685F21D /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAC808F6910F5EC721ED1BEAE036BE9 /* UIView+Grow.swift */; };
+		EED12DA3B3BD6B6598A327DEF7D28817 /* Integer+DateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E066798B337C05E497A439B7A86BC /* Integer+DateTools.swift */; };
+		EF8A83F94EDB6C7C42F36FFF618D0526 /* Date+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D577C72C90261269A2304F7F0F11AD /* Date+Components.swift */; };
+		F286B003B935CFD89B8AC2B1023ECE8A /* SceneLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A2E1D11C7CDFF612FB650778F61810 /* SceneLocationView.swift */; };
 		F43A61DBEE190C8F213EB8483DFCB05A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */; };
-		FAA11FE9D8B28A924EAADFB2D50624B3 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E446D69830BA2D9F92EC38A79EA38 /* PulleyViewController.swift */; };
+		FAA11FE9D8B28A924EAADFB2D50624B3 /* PulleyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8698EE73D34126F73DFAB75FC68729 /* PulleyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,94 +104,105 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0124E35CD4CEA3D9BBD51CA46EFB5EBF /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
+		003FFB26E681926F649894781479E05B /* ARCL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.xcconfig; sourceTree = "<group>"; };
 		037922008671D5346C63B148ACB1CB2E /* DateToolsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DateToolsSwift.framework; path = DateToolsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		041D87B27C959265CC9636CE6CB0D38F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05254A0C94E2D62E88562D48C26C7979 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		0781F04349F794AFCDE4501B73C1A4DD /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
 		07B1FA7F0F7D87A94D0B9B1BE4250930 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SceneKit.framework; sourceTree = DEVELOPER_DIR; };
-		084EEB51E666D3741066A248F40DB0BC /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
-		0A102D4B10CA1082CB1BB2C2B816211C /* Date+Manipulations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Manipulations.swift"; path = "DateToolsSwift/DateTools/Date+Manipulations.swift"; sourceTree = "<group>"; };
 		0E26F54AA5576D1FFF03643FB49CD5EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		10301B142ADBEDF0C8B4DA7AE9287D14 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
+		0E554A8D61BBB9CC3344204037B6E824 /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
+		0E5C1C302294D7442258ECBE69005AC1 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		0FD09C81459842B44E3FBA46ECB3A938 /* DateToolsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DateToolsSwift.modulemap; sourceTree = "<group>"; };
 		10A89CF45862487F6558FAAABD810412 /* Pods-wayfarer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wayfarer.release.xcconfig"; sourceTree = "<group>"; };
-		10B383FB17A176EBA923B80BB3806D9C /* Date+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Bundle.swift"; path = "DateToolsSwift/DateTools/Date+Bundle.swift"; sourceTree = "<group>"; };
-		10E28F9B93B17BDA4A4B61CE2F712729 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		10D577C72C90261269A2304F7F0F11AD /* Date+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "DateToolsSwift/DateTools/Date+Components.swift"; sourceTree = "<group>"; };
 		1133D82C30562AE07C12D04C3EA63E32 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ARKit.framework; sourceTree = DEVELOPER_DIR; };
-		119C263ABC3DF1CEB7FB0614E64FE616 /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Grow.swift"; path = "Pod/Classes/UIView+Grow.swift"; sourceTree = "<group>"; };
-		151BC21216F564519B413293FEEF02F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15CA1674316E54D48B266205049729F1 /* ARCL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARCL-dummy.m"; sourceTree = "<group>"; };
-		1E2132A3B1F2EA353FF448133C4B81E0 /* TimePeriodChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodChain.swift; path = DateToolsSwift/DateTools/TimePeriodChain.swift; sourceTree = "<group>"; };
-		1E78A04D62512627A9000318D9E303FE /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
-		27D56CA60858C8C0DCEEB987569BAE31 /* DateToolsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateToolsSwift-dummy.m"; sourceTree = "<group>"; };
-		3705FBEDBD023B98A559DB898C747734 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
-		389FEFA966E5064856BFD098C55D3180 /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
-		39A166E81CF32E419E25C93878E2C7E4 /* Date+TimeAgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+TimeAgo.swift"; path = "DateToolsSwift/DateTools/Date+TimeAgo.swift"; sourceTree = "<group>"; };
-		3BB96C819F304906C21143751B8D2FD3 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = DateToolsSwift/DateTools/Enums.swift; sourceTree = "<group>"; };
-		4339C616859E95A28EDBC7B63FC0B2AD /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "ARKit+CoreLocation/Source/SceneLocationView.swift"; sourceTree = "<group>"; };
-		439F47A9FC423591B56EA0DC7ACE395B /* Date+Comparators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Comparators.swift"; path = "DateToolsSwift/DateTools/Date+Comparators.swift"; sourceTree = "<group>"; };
-		447F8BDEF1EA0F06EFDBC288C68056D8 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
+		1208025C9D6608E42DC8A204D0D75B70 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		13D1FFCF684A4937D5A77B112FD2CB4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1510F6C02A087E4B352CCB31E27A3CDC /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pulley.modulemap; sourceTree = "<group>"; };
+		178E066798B337C05E497A439B7A86BC /* Integer+DateTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer+DateTools.swift"; path = "DateToolsSwift/DateTools/Integer+DateTools.swift"; sourceTree = "<group>"; };
+		1A26EF7FF41322112FFFA7B123244D08 /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
+		1C8698EE73D34126F73DFAB75FC68729 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
+		1D3034D27DA17760B80D4E06E805B666 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "ARKit+CoreLocation/Source/LocationManager.swift"; sourceTree = "<group>"; };
+		1D40DD36AC68CBEDE1456DCE911E7A71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BC6DE606A40C5C73E7ABC552D6A656 /* Pulley-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-prefix.pch"; sourceTree = "<group>"; };
+		2C015F38865EA183ABAC9D9DB4410D5B /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "ARKit+CoreLocation/Source/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
+		2E92769A7BCC5D4055DB3F20C88242A2 /* Date+Format.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Format.swift"; path = "DateToolsSwift/DateTools/Date+Format.swift"; sourceTree = "<group>"; };
+		3193612E5AA722600D24C21EFB98AEE1 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		34CD7B3872EA7A6641E6A3C1C58E17C5 /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ARCL.modulemap; sourceTree = "<group>"; };
+		34CE4144BAFA8B5D66F40502795227C7 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
+		36636899F24A72E2E2D30D625406E859 /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
+		39447FC228EB78977624A3DB0B8D5C7C /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjC.swift; path = Pod/Classes/ObjC.swift; sourceTree = "<group>"; };
+		3AA1434082E0CDD3906AA84B7ACFD303 /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoader.swift; path = Pod/Classes/LiquidLoader.swift; sourceTree = "<group>"; };
+		3DF28D011B5E64690DF4950CF381FDA9 /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
 		448E91511E31149C544015506B037EB2 /* Pods-wayfarer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wayfarer-dummy.m"; sourceTree = "<group>"; };
 		44E7AA6800316CBEA05C69EEC77B7B6E /* Pulley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pulley.framework; path = Pulley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		451D2204AC93C01A294FC7D8B86A3035 /* SceneLocationEstimate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationEstimate.swift; path = "ARKit+CoreLocation/Source/SceneLocationEstimate.swift"; sourceTree = "<group>"; };
-		4920E1E770DEC2CC367D7404C29F981C /* Integer+DateTools.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Integer+DateTools.swift"; path = "DateToolsSwift/DateTools/Integer+DateTools.swift"; sourceTree = "<group>"; };
-		4C01D26753CC10D53F7E5B2E55256642 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58D26007D5A062EC45008E400F47A0D6 /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLineEffect.swift; path = Pod/Classes/LiquidLineEffect.swift; sourceTree = "<group>"; };
-		5AE0591E9F715D35CAFF1597D1513B1B /* Date+Inits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Inits.swift"; path = "DateToolsSwift/DateTools/Date+Inits.swift"; sourceTree = "<group>"; };
-		60FED0D1907F4129E44EB6268BCCF25B /* TimePeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriod.swift; path = DateToolsSwift/DateTools/TimePeriod.swift; sourceTree = "<group>"; };
-		6A301BAD1E233EE4B256228A9FA6F096 /* ARCL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ARCL.modulemap; sourceTree = "<group>"; };
-		6C0CA088D81975ECAED9F46D007C49C3 /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoader.swift; path = Pod/Classes/LiquidLoader.swift; sourceTree = "<group>"; };
-		72704ABC6D6DD9C756DA8C3F8B3ADFC3 /* TimePeriodCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodCollection.swift; path = DateToolsSwift/DateTools/TimePeriodCollection.swift; sourceTree = "<group>"; };
-		72CDAE2B4355956BC2605567CDBADB56 /* ARCL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARCL.xcconfig; sourceTree = "<group>"; };
-		7930293C30C81462A145BE9EFD38BE66 /* Date+Format.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Format.swift"; path = "DateToolsSwift/DateTools/Date+Format.swift"; sourceTree = "<group>"; };
+		4AFD647433EED6E4F80ADBB35ECD1954 /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
+		521A272C89657FA5DB80E028BC0CD350 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		5424BB0E9CE527FF7FB270D6562852CB /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
+		5492D4056DB051C5BD6AEF1B3A76D2A2 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateToolsSwift/DateTools/DateTools.bundle; sourceTree = "<group>"; };
+		56085B08CF07602FB35D3E3215D7D181 /* Date+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Bundle.swift"; path = "DateToolsSwift/DateTools/Date+Bundle.swift"; sourceTree = "<group>"; };
+		586FEE870F021967C4FE26B95A71BEFE /* TimePeriodGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodGroup.swift; path = DateToolsSwift/DateTools/TimePeriodGroup.swift; sourceTree = "<group>"; };
+		5A8915B5A76482C168C80B96AF110213 /* TimePeriodChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodChain.swift; path = DateToolsSwift/DateTools/TimePeriodChain.swift; sourceTree = "<group>"; };
+		5D860F7014F85F31569523ACA54284C4 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		6ABF3942FD4D63DE243526BA6736F270 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		7067851C8241E5857066730EB18CAD2A /* DateToolsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateToolsSwift-prefix.pch"; sourceTree = "<group>"; };
+		70EFFFB5A8AB937735EE07178A6055E8 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "ARKit+CoreLocation/Source/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		7298BF791A1B4EB9350199E0CB379353 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = DateToolsSwift/DateTools/Constants.swift; sourceTree = "<group>"; };
+		7817EA9C1F473361134F8AF988800A83 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularGradientLayer.swift; path = Pod/Classes/CircularGradientLayer.swift; sourceTree = "<group>"; };
 		79673D96BCDFF236A244E406A373381E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
-		7A34868E6729744B15AA898270DDF3F8 /* DateToolsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DateToolsSwift.modulemap; sourceTree = "<group>"; };
-		7D76170809D6E60EE6E9756F327A6E19 /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
+		80356159605FE7DDEF7418ECC3AEC719 /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		80D8C6956428940593A69B1E1A1143A4 /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLineEffect.swift; path = Pod/Classes/LiquidLineEffect.swift; sourceTree = "<group>"; };
 		810B7CC2B003F1C6AB6DFD78F47270CB /* Pods-wayfarer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wayfarer-resources.sh"; sourceTree = "<group>"; };
 		83FD21A90EDE694BD69350F252271499 /* Pods-wayfarer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-wayfarer.modulemap"; sourceTree = "<group>"; };
-		8B96E3D95AEBE4937FC6B3052A2D6792 /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
-		8DAD561DA6C38F31634747F3388BE624 /* FloatingPoint+Radians.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FloatingPoint+Radians.swift"; path = "ARKit+CoreLocation/Source/FloatingPoint+Radians.swift"; sourceTree = "<group>"; };
+		86CB898E54264F92812807D2120AF579 /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
+		89E949C77B5DE97A86E323C6B9E611AC /* TimeChunk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeChunk.swift; path = DateToolsSwift/DateTools/TimeChunk.swift; sourceTree = "<group>"; };
+		8D6895545F1A1831EA3FD66000AC6081 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = DateToolsSwift/DateTools/Enums.swift; sourceTree = "<group>"; };
+		8D6B9FACDA9D35489969C467FFE686D3 /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "ARKit+CoreLocation/Source/LocationNode.swift"; sourceTree = "<group>"; };
+		8EA8DF9F8DA22EE0F3DB65494544B312 /* Date+Manipulations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Manipulations.swift"; path = "DateToolsSwift/DateTools/Date+Manipulations.swift"; sourceTree = "<group>"; };
+		8F22834271A11C0D399B68CEC184100D /* TimePeriodCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodCollection.swift; path = DateToolsSwift/DateTools/TimePeriodCollection.swift; sourceTree = "<group>"; };
 		90187F295AFC9365376335087C8CD7D4 /* Pods-wayfarer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wayfarer-acknowledgements.plist"; sourceTree = "<group>"; };
-		910EFC85E827E1C62F05128BE5EED7CE /* DateToolsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateToolsSwift-prefix.pch"; sourceTree = "<group>"; };
-		9195221CFBF9602E1363D11FA4D8A36F /* DateToolsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateToolsSwift-umbrella.h"; sourceTree = "<group>"; };
+		90C137BEA2DF3C09E333158964E80B8D /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		93A2E1D11C7CDFF612FB650778F61810 /* SceneLocationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneLocationView.swift; path = "ARKit+CoreLocation/Source/SceneLocationView.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95820C156905E11076F24619955BA5EF /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidCircleEffect.swift; path = Pod/Classes/LiquidCircleEffect.swift; sourceTree = "<group>"; };
+		9933B01C09CA30F952D9010A4555F9E8 /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
+		9F0DA8C623CA63073965F47C8DEC8A6F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		9F1D3400F15ADDA3895937C3C58E0DF6 /* Date+Inits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Inits.swift"; path = "DateToolsSwift/DateTools/Date+Inits.swift"; sourceTree = "<group>"; };
 		A00809C0D6B29407094CEE5AC459C158 /* Pods_wayfarer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wayfarer.framework; path = "Pods-wayfarer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26F21725CC3B3AB5004C0A6D228D9AA /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoadEffect.swift; path = Pod/Classes/LiquidLoadEffect.swift; sourceTree = "<group>"; };
-		A515428C17A8E4BACDA2DBAB3D637FAA /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjC.swift; path = Pod/Classes/ObjC.swift; sourceTree = "<group>"; };
-		A662519B9857143B6810347A3E4D2D7A /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularGradientLayer.swift; path = Pod/Classes/CircularGradientLayer.swift; sourceTree = "<group>"; };
-		A6A9281B3FC46F7BBB1F5D55A4FAECB0 /* Pulley.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pulley.modulemap; sourceTree = "<group>"; };
-		AA29DBFFEEA141CABDFF56DB88785CDA /* SCNVector3+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNVector3+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNVector3+Extensions.swift"; sourceTree = "<group>"; };
+		A326C5CD38BF7F718178F144E5A81AD8 /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "ARKit+CoreLocation/Source/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
+		A34B79AC006D3ECF8476109EE943CE55 /* Date+TimeAgo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+TimeAgo.swift"; path = "DateToolsSwift/DateTools/Date+TimeAgo.swift"; sourceTree = "<group>"; };
+		A664E45C6D129075D0CA6FA076C30448 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		A7986FFCB61B673CD1F56961D0496392 /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
+		A8708A50BD63810F18DA558ECB2D89BA /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
+		AAAC808F6910F5EC721ED1BEAE036BE9 /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Grow.swift"; path = "Pod/Classes/UIView+Grow.swift"; sourceTree = "<group>"; };
+		ADCCAB919DAF7C5964C3050395F76598 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
+		AE414AD64CC70BD055FE8470525A96F8 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
 		AEA9E2FFB6A6907CC1D1B3ED260CD57F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B176B884131F63AEB35D273A220874F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFCC0AC5E1467A8B637D9B7927113DB7 /* SCNNode+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SCNNode+Extensions.swift"; path = "ARKit+CoreLocation/Source/SCNNode+Extensions.swift"; sourceTree = "<group>"; };
+		B261134BA4369380963C8D3FDF41CAD8 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "ARKit+CoreLocation/Source/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
 		B332B737E4ABF2382AFBB32113656336 /* ARCL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ARCL.framework; path = ARCL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51C8BE44405BA439DC57A95F44AD5D7 /* Date+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Components.swift"; path = "DateToolsSwift/DateTools/Date+Components.swift"; sourceTree = "<group>"; };
+		B6A6390AC2377244DBB9728FE0C4E95B /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		BA32E2F434CC756BCD412FDD8D0B0BBF /* DateToolsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DateToolsSwift-dummy.m"; sourceTree = "<group>"; };
+		BC43FEA3926B1BC8C3229B0BE2EC9056 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
 		BC8856E47A86309839CC6D46D7329185 /* LiquidLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LiquidLoader.framework; path = LiquidLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3FD5DFE48EEDF0FE5984019F6CF0756 /* LocationNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationNode.swift; path = "ARKit+CoreLocation/Source/LocationNode.swift"; sourceTree = "<group>"; };
-		C5C63C1128C93807BA6BDCAE38A38A5E /* PulleyPassthroughScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyPassthroughScrollView.swift; path = PulleyLib/PulleyPassthroughScrollView.swift; sourceTree = "<group>"; };
+		C0366093B4F40A96BA302A8977DB604F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C077531950FE398F4294C2F0A5D92DB7 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
 		C6F54B6A540CB59079160F0C30A55A4D /* Pods-wayfarer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wayfarer-frameworks.sh"; sourceTree = "<group>"; };
-		C86E446D69830BA2D9F92EC38A79EA38 /* PulleyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PulleyViewController.swift; path = PulleyLib/PulleyViewController.swift; sourceTree = "<group>"; };
-		C99EEAA3ABFA2EC766B88A3E2EADB993 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "ARKit+CoreLocation/Source/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
-		CAA04C5260CA8DAB9A6E879D292DDD68 /* Pulley-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pulley-umbrella.h"; sourceTree = "<group>"; };
-		CB53FA2F3AD7EA910081F3D59851D90A /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = DateToolsSwift/DateTools/Constants.swift; sourceTree = "<group>"; };
-		CB9CD427A1366BA4866AA2CA8AE9729F /* SceneLocationEstimate+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SceneLocationEstimate+Extensions.swift"; path = "ARKit+CoreLocation/Source/SceneLocationEstimate+Extensions.swift"; sourceTree = "<group>"; };
-		CD544B22F3BAC8D542FF7FD66D84F5F2 /* TimePeriodGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriodGroup.swift; path = DateToolsSwift/DateTools/TimePeriodGroup.swift; sourceTree = "<group>"; };
 		CD7DB36DA530D163DA70B38311C7CDC5 /* Pods-wayfarer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wayfarer.debug.xcconfig"; sourceTree = "<group>"; };
-		CEAFD8FD0DD20AEA753F2DB910856BC9 /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidCircleEffect.swift; path = Pod/Classes/LiquidCircleEffect.swift; sourceTree = "<group>"; };
-		D10C8F12370F489591304753670049CB /* Pulley-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pulley-dummy.m"; sourceTree = "<group>"; };
-		D4D3CEA59DF25C8BF5CFF6FAE8D1CD89 /* Pulley.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pulley.xcconfig; sourceTree = "<group>"; };
-		D935E4D9C326DA5BFA0BA3A1F84C869C /* ARCL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-umbrella.h"; sourceTree = "<group>"; };
+		D128DA697A079436DA83B8E23C31A3AE /* TimePeriod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimePeriod.swift; path = DateToolsSwift/DateTools/TimePeriod.swift; sourceTree = "<group>"; };
 		DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DC5EB4FB43547CA6F3F4E58E5C365283 /* DateTools.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = DateToolsSwift/DateTools/DateTools.bundle; sourceTree = "<group>"; };
-		DEF3B591C7F3552D0A06E42027271445 /* LocationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "ARKit+CoreLocation/Source/LocationManager.swift"; sourceTree = "<group>"; };
-		E06962EDBD1174D094B6D2FBB6D3B81B /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
-		E5EF3EA17EAEDE311AA689004028FA16 /* DateToolsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateToolsSwift.xcconfig; sourceTree = "<group>"; };
-		E9ECDBEBA518FFD4F44A61EB000ED5C0 /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
+		DF1DDDB4BC3F7FDE7F5B8D77B5DFD077 /* DateToolsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DateToolsSwift-umbrella.h"; sourceTree = "<group>"; };
+		E592F55E224BD39D90A627DF6205CE45 /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
+		E9C01366A84C0C4DF2E8B3D569A0EA78 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocation+Extensions.swift"; path = "ARKit+CoreLocation/Source/CLLocation+Extensions.swift"; sourceTree = "<group>"; };
 		EA3B7D741DE8B71983189DA6F83F265B /* Pods-wayfarer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wayfarer-umbrella.h"; sourceTree = "<group>"; };
-		EBD0A6B5F171AC83CEFA50085B0E3F33 /* TimeChunk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeChunk.swift; path = DateToolsSwift/DateTools/TimeChunk.swift; sourceTree = "<group>"; };
-		ECB626CE5A4B707E7262215DD5450270 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extensions.swift"; path = "ARKit+CoreLocation/Source/CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		EA3E7BEBE125DED09451034188B886DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2B31CB6F8733D6DA9701B1A3A63EEA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		EEEE697570F907D66BDBAC3F01B6F520 /* Pods-wayfarer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wayfarer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EF3FD181C4F754CC0065C52FB9CF0B3C /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
-		FE9A06CFC41A31F3D27DCDB8C2CEAEBC /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		F2EC5B78161A9957682230FCC59C806C /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
+		FB04C7A32B08DB886649BFBE1565479E /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		FB36C1536EC9080FE6755B8173CC493F /* DateToolsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DateToolsSwift.xcconfig; sourceTree = "<group>"; };
+		FC5241A66C67323BE2499EDFBE9F4D92 /* ARCL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARCL-prefix.pch"; sourceTree = "<group>"; };
+		FFA033E127A97131D6DD616D0F49E07C /* Date+Comparators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Comparators.swift"; path = "DateToolsSwift/DateTools/Date+Comparators.swift"; sourceTree = "<group>"; };
+		FFE484A71892448356D9980C64FC68D4 /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoadEffect.swift; path = Pod/Classes/LiquidLoadEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,20 +255,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CFB24B7EBBFB68938EDA8D50AA38259 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A34868E6729744B15AA898270DDF3F8 /* DateToolsSwift.modulemap */,
-				E5EF3EA17EAEDE311AA689004028FA16 /* DateToolsSwift.xcconfig */,
-				27D56CA60858C8C0DCEEB987569BAE31 /* DateToolsSwift-dummy.m */,
-				910EFC85E827E1C62F05128BE5EED7CE /* DateToolsSwift-prefix.pch */,
-				9195221CFBF9602E1363D11FA4D8A36F /* DateToolsSwift-umbrella.h */,
-				B176B884131F63AEB35D273A220874F7 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DateToolsSwift";
-			sourceTree = "<group>";
-		};
 		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,12 +263,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2E5A6C22E4E6CA2209631630E1D240A4 /* Pulley */ = {
+		2178DC3A9FD25EE6810F64742AD325C5 /* Crashlytics */ = {
 			isa = PBXGroup;
 			children = (
-				C5C63C1128C93807BA6BDCAE38A38A5E /* PulleyPassthroughScrollView.swift */,
-				C86E446D69830BA2D9F92EC38A79EA38 /* PulleyViewController.swift */,
-				386EE5A4818135BC9E2C10253C379647 /* Support Files */,
+				B6A6390AC2377244DBB9728FE0C4E95B /* ANSCompatibility.h */,
+				521A272C89657FA5DB80E028BC0CD350 /* Answers.h */,
+				5D860F7014F85F31569523ACA54284C4 /* CLSAttributes.h */,
+				6ABF3942FD4D63DE243526BA6736F270 /* CLSLogging.h */,
+				90C137BEA2DF3C09E333158964E80B8D /* CLSReport.h */,
+				FB04C7A32B08DB886649BFBE1565479E /* CLSStackFrame.h */,
+				1208025C9D6608E42DC8A204D0D75B70 /* Crashlytics.h */,
+				617C684BD237137449D0D722F12B0F89 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		28BBE85139E0E26378CB1385B03668D9 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				3193612E5AA722600D24C21EFB98AEE1 /* FABAttributes.h */,
+				A664E45C6D129075D0CA6FA076C30448 /* Fabric.h */,
+				2A058A79CEB6B34224C2BF161CDF5C6A /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		2A058A79CEB6B34224C2BF161CDF5C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F0DA8C623CA63073965F47C8DEC8A6F /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2ABFB359FB284B649E246C2764B390F0 /* Pulley */ = {
+			isa = PBXGroup;
+			children = (
+				36636899F24A72E2E2D30D625406E859 /* PulleyPassthroughScrollView.swift */,
+				1C8698EE73D34126F73DFAB75FC68729 /* PulleyViewController.swift */,
+				C85153415524D4693A132F694D861B3A /* Support Files */,
 			);
 			name = Pulley;
 			path = Pulley;
@@ -285,32 +317,73 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		386EE5A4818135BC9E2C10253C379647 /* Support Files */ = {
+		5965D53C372D5621C1F30C6AE77310F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				041D87B27C959265CC9636CE6CB0D38F /* Info.plist */,
-				A6A9281B3FC46F7BBB1F5D55A4FAECB0 /* Pulley.modulemap */,
-				D4D3CEA59DF25C8BF5CFF6FAE8D1CD89 /* Pulley.xcconfig */,
-				D10C8F12370F489591304753670049CB /* Pulley-dummy.m */,
-				389FEFA966E5064856BFD098C55D3180 /* Pulley-prefix.pch */,
-				CAA04C5260CA8DAB9A6E879D292DDD68 /* Pulley-umbrella.h */,
+				5492D4056DB051C5BD6AEF1B3A76D2A2 /* DateTools.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Pulley";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		6A4DFA212F1FD6451E19917A154A4A6A /* Support Files */ = {
+		5C3EA25121BEDFF587C3ADD16F35379F /* DateToolsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				6A301BAD1E233EE4B256228A9FA6F096 /* ARCL.modulemap */,
-				72CDAE2B4355956BC2605567CDBADB56 /* ARCL.xcconfig */,
-				15CA1674316E54D48B266205049729F1 /* ARCL-dummy.m */,
-				E9ECDBEBA518FFD4F44A61EB000ED5C0 /* ARCL-prefix.pch */,
-				D935E4D9C326DA5BFA0BA3A1F84C869C /* ARCL-umbrella.h */,
-				4C01D26753CC10D53F7E5B2E55256642 /* Info.plist */,
+				7298BF791A1B4EB9350199E0CB379353 /* Constants.swift */,
+				56085B08CF07602FB35D3E3215D7D181 /* Date+Bundle.swift */,
+				FFA033E127A97131D6DD616D0F49E07C /* Date+Comparators.swift */,
+				10D577C72C90261269A2304F7F0F11AD /* Date+Components.swift */,
+				2E92769A7BCC5D4055DB3F20C88242A2 /* Date+Format.swift */,
+				9F1D3400F15ADDA3895937C3C58E0DF6 /* Date+Inits.swift */,
+				8EA8DF9F8DA22EE0F3DB65494544B312 /* Date+Manipulations.swift */,
+				A34B79AC006D3ECF8476109EE943CE55 /* Date+TimeAgo.swift */,
+				8D6895545F1A1831EA3FD66000AC6081 /* Enums.swift */,
+				178E066798B337C05E497A439B7A86BC /* Integer+DateTools.swift */,
+				89E949C77B5DE97A86E323C6B9E611AC /* TimeChunk.swift */,
+				D128DA697A079436DA83B8E23C31A3AE /* TimePeriod.swift */,
+				5A8915B5A76482C168C80B96AF110213 /* TimePeriodChain.swift */,
+				8F22834271A11C0D399B68CEC184100D /* TimePeriodCollection.swift */,
+				586FEE870F021967C4FE26B95A71BEFE /* TimePeriodGroup.swift */,
+				5965D53C372D5621C1F30C6AE77310F9 /* Resources */,
+				6AEFCEB5316A5A61A5847963EB849179 /* Support Files */,
+			);
+			name = DateToolsSwift;
+			path = DateToolsSwift;
+			sourceTree = "<group>";
+		};
+		617C684BD237137449D0D722F12B0F89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2B31CB6F8733D6DA9701B1A3A63EEA /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6638FCD13622D456002B968BD1931156 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0366093B4F40A96BA302A8977DB604F /* Info.plist */,
+				E592F55E224BD39D90A627DF6205CE45 /* LiquidLoader.modulemap */,
+				BC43FEA3926B1BC8C3229B0BE2EC9056 /* LiquidLoader.xcconfig */,
+				4AFD647433EED6E4F80ADBB35ECD1954 /* LiquidLoader-dummy.m */,
+				1A26EF7FF41322112FFFA7B123244D08 /* LiquidLoader-prefix.pch */,
+				3DF28D011B5E64690DF4950CF381FDA9 /* LiquidLoader-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ARCL";
+			path = "../Target Support Files/LiquidLoader";
+			sourceTree = "<group>";
+		};
+		6AEFCEB5316A5A61A5847963EB849179 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FD09C81459842B44E3FBA46ECB3A938 /* DateToolsSwift.modulemap */,
+				FB36C1536EC9080FE6755B8173CC493F /* DateToolsSwift.xcconfig */,
+				BA32E2F434CC756BCD412FDD8D0B0BBF /* DateToolsSwift-dummy.m */,
+				7067851C8241E5857066730EB18CAD2A /* DateToolsSwift-prefix.pch */,
+				DF1DDDB4BC3F7FDE7F5B8D77B5DFD077 /* DateToolsSwift-umbrella.h */,
+				EA3E7BEBE125DED09451034188B886DB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DateToolsSwift";
 			sourceTree = "<group>";
 		};
 		718E8FFEF38F857374DFFFC7415A361A /* Pods-wayfarer */ = {
@@ -336,43 +409,24 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				E140658771AB9F441D76B12E95D2D2F4 /* Pods */,
+				BBEC6039647C6228C80B95A70E686501 /* Pods */,
 				908545FFA9E84CA62CD7B92AE044D942 /* Products */,
 				2FC4538BD24E7C1119FEBAEC6D95C673 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8CFB59FE2756F210B47961400AB9AF1C /* Resources */ = {
+		88EBA2B244F34672ED333806E87E9BBF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC5EB4FB43547CA6F3F4E58E5C365283 /* DateTools.bundle */,
+				34CD7B3872EA7A6641E6A3C1C58E17C5 /* ARCL.modulemap */,
+				003FFB26E681926F649894781479E05B /* ARCL.xcconfig */,
+				0E554A8D61BBB9CC3344204037B6E824 /* ARCL-dummy.m */,
+				FC5241A66C67323BE2499EDFBE9F4D92 /* ARCL-prefix.pch */,
+				A7986FFCB61B673CD1F56961D0496392 /* ARCL-umbrella.h */,
+				13D1FFCF684A4937D5A77B112FD2CB4E /* Info.plist */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		8D6D57A6BFF68B12205871C22EFAA824 /* DateToolsSwift */ = {
-			isa = PBXGroup;
-			children = (
-				CB53FA2F3AD7EA910081F3D59851D90A /* Constants.swift */,
-				10B383FB17A176EBA923B80BB3806D9C /* Date+Bundle.swift */,
-				439F47A9FC423591B56EA0DC7ACE395B /* Date+Comparators.swift */,
-				B51C8BE44405BA439DC57A95F44AD5D7 /* Date+Components.swift */,
-				7930293C30C81462A145BE9EFD38BE66 /* Date+Format.swift */,
-				5AE0591E9F715D35CAFF1597D1513B1B /* Date+Inits.swift */,
-				0A102D4B10CA1082CB1BB2C2B816211C /* Date+Manipulations.swift */,
-				39A166E81CF32E419E25C93878E2C7E4 /* Date+TimeAgo.swift */,
-				3BB96C819F304906C21143751B8D2FD3 /* Enums.swift */,
-				4920E1E770DEC2CC367D7404C29F981C /* Integer+DateTools.swift */,
-				EBD0A6B5F171AC83CEFA50085B0E3F33 /* TimeChunk.swift */,
-				60FED0D1907F4129E44EB6268BCCF25B /* TimePeriod.swift */,
-				1E2132A3B1F2EA353FF448133C4B81E0 /* TimePeriodChain.swift */,
-				72704ABC6D6DD9C756DA8C3F8B3ADFC3 /* TimePeriodCollection.swift */,
-				CD544B22F3BAC8D542FF7FD66D84F5F2 /* TimePeriodGroup.swift */,
-				8CFB59FE2756F210B47961400AB9AF1C /* Resources */,
-				0CFB24B7EBBFB68938EDA8D50AA38259 /* Support Files */,
-			);
-			name = DateToolsSwift;
-			path = DateToolsSwift;
+			name = "Support Files";
+			path = "../Target Support Files/ARCL";
 			sourceTree = "<group>";
 		};
 		908545FFA9E84CA62CD7B92AE044D942 /* Products */ = {
@@ -387,57 +441,73 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A142805F9C9FCFA4D8A07792602C3944 /* ARCL */ = {
+		9BD2803E1B2732EBEC6BA0ABC7A855BD /* LiquidLoader */ = {
 			isa = PBXGroup;
 			children = (
-				ECB626CE5A4B707E7262215DD5450270 /* CGPoint+Extensions.swift */,
-				C99EEAA3ABFA2EC766B88A3E2EADB993 /* CLLocation+Extensions.swift */,
-				8DAD561DA6C38F31634747F3388BE624 /* FloatingPoint+Radians.swift */,
-				DEF3B591C7F3552D0A06E42027271445 /* LocationManager.swift */,
-				C3FD5DFE48EEDF0FE5984019F6CF0756 /* LocationNode.swift */,
-				451D2204AC93C01A294FC7D8B86A3035 /* SceneLocationEstimate.swift */,
-				CB9CD427A1366BA4866AA2CA8AE9729F /* SceneLocationEstimate+Extensions.swift */,
-				4339C616859E95A28EDBC7B63FC0B2AD /* SceneLocationView.swift */,
-				10E28F9B93B17BDA4A4B61CE2F712729 /* SCNNode+Extensions.swift */,
-				AA29DBFFEEA141CABDFF56DB88785CDA /* SCNVector3+Extensions.swift */,
-				6A4DFA212F1FD6451E19917A154A4A6A /* Support Files */,
-			);
-			name = ARCL;
-			path = ARCL;
-			sourceTree = "<group>";
-		};
-		DDBCA4D80F7BEC716A6121580C3DD77F /* LiquidLoader */ = {
-			isa = PBXGroup;
-			children = (
-				10301B142ADBEDF0C8B4DA7AE9287D14 /* ArrayEx.swift */,
-				0124E35CD4CEA3D9BBD51CA46EFB5EBF /* CGPointEx.swift */,
-				EF3FD181C4F754CC0065C52FB9CF0B3C /* CGRectEx.swift */,
-				A662519B9857143B6810347A3E4D2D7A /* CircularGradientLayer.swift */,
-				CEAFD8FD0DD20AEA753F2DB910856BC9 /* LiquidCircleEffect.swift */,
-				58D26007D5A062EC45008E400F47A0D6 /* LiquidLineEffect.swift */,
-				A26F21725CC3B3AB5004C0A6D228D9AA /* LiquidLoadEffect.swift */,
-				6C0CA088D81975ECAED9F46D007C49C3 /* LiquidLoader.swift */,
-				0781F04349F794AFCDE4501B73C1A4DD /* LiquidUtil.swift */,
-				447F8BDEF1EA0F06EFDBC288C68056D8 /* LiquittableCircle.swift */,
-				A515428C17A8E4BACDA2DBAB3D637FAA /* ObjC.swift */,
-				FE9A06CFC41A31F3D27DCDB8C2CEAEBC /* SimpleCircleLiquidEngine.swift */,
-				1E78A04D62512627A9000318D9E303FE /* UIColorEx.swift */,
-				119C263ABC3DF1CEB7FB0614E64FE616 /* UIView+Grow.swift */,
-				FE08D1325F18FCCA7F2332DC5CAEC30D /* Support Files */,
+				ADCCAB919DAF7C5964C3050395F76598 /* ArrayEx.swift */,
+				F2EC5B78161A9957682230FCC59C806C /* CGPointEx.swift */,
+				0E5C1C302294D7442258ECBE69005AC1 /* CGRectEx.swift */,
+				7817EA9C1F473361134F8AF988800A83 /* CircularGradientLayer.swift */,
+				95820C156905E11076F24619955BA5EF /* LiquidCircleEffect.swift */,
+				80D8C6956428940593A69B1E1A1143A4 /* LiquidLineEffect.swift */,
+				FFE484A71892448356D9980C64FC68D4 /* LiquidLoadEffect.swift */,
+				3AA1434082E0CDD3906AA84B7ACFD303 /* LiquidLoader.swift */,
+				C077531950FE398F4294C2F0A5D92DB7 /* LiquidUtil.swift */,
+				34CE4144BAFA8B5D66F40502795227C7 /* LiquittableCircle.swift */,
+				39447FC228EB78977624A3DB0B8D5C7C /* ObjC.swift */,
+				AE414AD64CC70BD055FE8470525A96F8 /* SimpleCircleLiquidEngine.swift */,
+				A8708A50BD63810F18DA558ECB2D89BA /* UIColorEx.swift */,
+				AAAC808F6910F5EC721ED1BEAE036BE9 /* UIView+Grow.swift */,
+				6638FCD13622D456002B968BD1931156 /* Support Files */,
 			);
 			name = LiquidLoader;
 			path = LiquidLoader;
 			sourceTree = "<group>";
 		};
-		E140658771AB9F441D76B12E95D2D2F4 /* Pods */ = {
+		B0342ED0F1FCC7601CE0DF6B0A8D0821 /* ARCL */ = {
 			isa = PBXGroup;
 			children = (
-				A142805F9C9FCFA4D8A07792602C3944 /* ARCL */,
-				8D6D57A6BFF68B12205871C22EFAA824 /* DateToolsSwift */,
-				DDBCA4D80F7BEC716A6121580C3DD77F /* LiquidLoader */,
-				2E5A6C22E4E6CA2209631630E1D240A4 /* Pulley */,
+				B261134BA4369380963C8D3FDF41CAD8 /* CGPoint+Extensions.swift */,
+				E9C01366A84C0C4DF2E8B3D569A0EA78 /* CLLocation+Extensions.swift */,
+				70EFFFB5A8AB937735EE07178A6055E8 /* FloatingPoint+Radians.swift */,
+				1D3034D27DA17760B80D4E06E805B666 /* LocationManager.swift */,
+				8D6B9FACDA9D35489969C467FFE686D3 /* LocationNode.swift */,
+				2C015F38865EA183ABAC9D9DB4410D5B /* SceneLocationEstimate.swift */,
+				A326C5CD38BF7F718178F144E5A81AD8 /* SceneLocationEstimate+Extensions.swift */,
+				93A2E1D11C7CDFF612FB650778F61810 /* SceneLocationView.swift */,
+				AFCC0AC5E1467A8B637D9B7927113DB7 /* SCNNode+Extensions.swift */,
+				80356159605FE7DDEF7418ECC3AEC719 /* SCNVector3+Extensions.swift */,
+				88EBA2B244F34672ED333806E87E9BBF /* Support Files */,
+			);
+			name = ARCL;
+			path = ARCL;
+			sourceTree = "<group>";
+		};
+		BBEC6039647C6228C80B95A70E686501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0342ED0F1FCC7601CE0DF6B0A8D0821 /* ARCL */,
+				2178DC3A9FD25EE6810F64742AD325C5 /* Crashlytics */,
+				5C3EA25121BEDFF587C3ADD16F35379F /* DateToolsSwift */,
+				28BBE85139E0E26378CB1385B03668D9 /* Fabric */,
+				9BD2803E1B2732EBEC6BA0ABC7A855BD /* LiquidLoader */,
+				2ABFB359FB284B649E246C2764B390F0 /* Pulley */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C85153415524D4693A132F694D861B3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D40DD36AC68CBEDE1456DCE911E7A71 /* Info.plist */,
+				1510F6C02A087E4B352CCB31E27A3CDC /* Pulley.modulemap */,
+				9933B01C09CA30F952D9010A4555F9E8 /* Pulley.xcconfig */,
+				5424BB0E9CE527FF7FB270D6562852CB /* Pulley-dummy.m */,
+				22BC6DE606A40C5C73E7ABC552D6A656 /* Pulley-prefix.pch */,
+				86CB898E54264F92812807D2120AF579 /* Pulley-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pulley";
 			sourceTree = "<group>";
 		};
 		FDA5C35F353171FA0BCB3D2466E21678 /* iOS */ = {
@@ -451,20 +521,6 @@
 				DB51239D73D237B91C3F2A50237E2BB6 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		FE08D1325F18FCCA7F2332DC5CAEC30D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				151BC21216F564519B413293FEEF02F0 /* Info.plist */,
-				7D76170809D6E60EE6E9756F327A6E19 /* LiquidLoader.modulemap */,
-				3705FBEDBD023B98A559DB898C747734 /* LiquidLoader.xcconfig */,
-				E06962EDBD1174D094B6D2FBB6D3B81B /* LiquidLoader-dummy.m */,
-				084EEB51E666D3741066A248F40DB0BC /* LiquidLoader-prefix.pch */,
-				8B96E3D95AEBE4937FC6B3052A2D6792 /* LiquidLoader-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/LiquidLoader";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -758,7 +814,7 @@
 /* Begin XCBuildConfiguration section */
 		07B8A1DE7DBC03DD8E700FE91BA8B137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CDAE2B4355956BC2605567CDBADB56 /* ARCL.xcconfig */;
+			baseConfigurationReference = 003FFB26E681926F649894781479E05B /* ARCL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -789,7 +845,7 @@
 		};
 		0FC89A78926C3868E060031194258DB2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72CDAE2B4355956BC2605567CDBADB56 /* ARCL.xcconfig */;
+			baseConfigurationReference = 003FFB26E681926F649894781479E05B /* ARCL.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -875,7 +931,7 @@
 		};
 		3E5C98151BE064F241C5B442C4D0EAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3705FBEDBD023B98A559DB898C747734 /* LiquidLoader.xcconfig */;
+			baseConfigurationReference = BC43FEA3926B1BC8C3229B0BE2EC9056 /* LiquidLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -906,7 +962,7 @@
 		};
 		45944CD8B10EE958B8B1BA142447B5CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5EF3EA17EAEDE311AA689004028FA16 /* DateToolsSwift.xcconfig */;
+			baseConfigurationReference = FB36C1536EC9080FE6755B8173CC493F /* DateToolsSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -937,7 +993,7 @@
 		};
 		5E8F49DE93936AFBCDBC9F7264623438 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5EF3EA17EAEDE311AA689004028FA16 /* DateToolsSwift.xcconfig */;
+			baseConfigurationReference = FB36C1536EC9080FE6755B8173CC493F /* DateToolsSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1027,7 +1083,7 @@
 		};
 		7F387E25F8629592EF9BB2589E450622 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4D3CEA59DF25C8BF5CFF6FAE8D1CD89 /* Pulley.xcconfig */;
+			baseConfigurationReference = 9933B01C09CA30F952D9010A4555F9E8 /* Pulley.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1058,7 +1114,7 @@
 		};
 		F00A5F5F8FB59ADB9791243EFEBCD9A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3705FBEDBD023B98A559DB898C747734 /* LiquidLoader.xcconfig */;
+			baseConfigurationReference = BC43FEA3926B1BC8C3229B0BE2EC9056 /* LiquidLoader.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1123,7 +1179,7 @@
 		};
 		FC26E491DD332AD8C4F5697DAD3794B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4D3CEA59DF25C8BF5CFF6FAE8D1CD89 /* Pulley.xcconfig */;
+			baseConfigurationReference = 9933B01C09CA30F952D9010A4555F9E8 /* Pulley.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
