@@ -91,7 +91,6 @@ extension NearByTableViewController: StationManagerDelegate {
   func stationManager(_ manager: StationManager, didUpdateStations stations: [Station]?, withTrains trains: [[Train]]) {
 
     DispatchQueue.main.async {
-//      self.refreshControl?.endRefreshing();
       self.tableView.reloadData();
     }
   }

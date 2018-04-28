@@ -14,6 +14,7 @@ class PulleyContainerViewController: PulleyViewController {
   override func viewDidLoad() {
     super.viewDidLoad();
     
+    self.backgroundDimmingOpacity = 0.0;
     self.initialDrawerPosition = .closed;
     self.setDrawerPosition(position: .closed);
     

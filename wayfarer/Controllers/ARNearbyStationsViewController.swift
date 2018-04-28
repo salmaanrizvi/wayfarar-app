@@ -11,6 +11,7 @@ import ARCL
 import CoreLocation
 import ARKit
 import Pulley
+import Crashlytics
 
 class ARNearbyStationsViewController: UIViewController {
   override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -104,7 +105,7 @@ class ARNearbyStationsViewController: UIViewController {
     var tappedNode = hitTestResults.first?.node;
     while (tappedNode != nil && iterations < maxIterations) {
       if let stationNode = tappedNode as? StationNode {
-        self.showStationDetail(stationNode.station);
+        self.showStationDetails([stationNode.station]);
         return;
       }
       tappedNode = tappedNode?.parent;
@@ -136,12 +137,6 @@ class ARNearbyStationsViewController: UIViewController {
     self.sceneLocationView.sceneNode?.childNodes.forEach({ node in
       self.sceneLocationView.removeLocationNode(locationNode: node as! LocationNode);
     });
-  }
-  
-  func showStationDetail(_ station: Station) {
-    let trains = self.stationManager.getTrainsFor(station: station);
-    let object: [String: Any] = ["station": station, "trains": trains];
-    NotificationCenter.default.post(name: .DrawerNotification, object: object);
   }
   
   func showStationDetails(_ stations: [Station]) {
@@ -246,8 +241,8 @@ extension ARNearbyStationsViewController: SceneLocationViewDelegate {
       }
     });
     
-    if (stations == self.stationsInView) { return; }
     if (stations.isEmpty) { self.hideStationDetail(); }
+    if (stations == self.stationsInView) { return; }
 
     self.stationsInView = stations;
     self.showStationDetails(self.stationsInView)

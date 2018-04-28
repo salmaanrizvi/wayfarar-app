@@ -468,15 +468,15 @@ public class SceneLocationView: ARSCNView, ARSCNViewDelegate {
                 self.addSceneLocationEstimate(location: currentLocation)
             }
         }
-      
-      if let pointOfView = pointOfView {
-        let nodes = self.locationNodes.filter {
-          let insidePov = self.isNode($0, insideFrustumOf: pointOfView);
-          return insidePov;
-        }
-
-        self.locationDelegate?.sceneLocationViewNodeDidMoveIntoView?(nodes);
-      }
+//
+//      if let pointOfView = pointOfView {
+//        let nodes = self.locationNodes.filter {
+//          let insidePov = self.isNode($0, insideFrustumOf: pointOfView);
+//          return insidePov;
+//        }
+//
+//        self.locationDelegate?.sceneLocationViewNodeDidMoveIntoView?(nodes);
+//      }
     }
     
     public func sessionWasInterrupted(_ session: ARSession) {
