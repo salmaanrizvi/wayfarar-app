@@ -5,3 +5,5 @@ Transit times are extremely useful. In New York City, however, you only get real
 Here's a link to a [full demo video](https://vimeo.com/330042254)
 
 And for those less inclined - a GIF:
+
+![ART Demo GIF](https://github.com/salmaanrizvi/wayfarar-app/blob/master/ART%20demo.gif)
