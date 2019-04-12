@@ -12,6 +12,7 @@ import CoreLocation
 import ARKit
 import Pulley
 import Crashlytics
+import MapKit
 
 class ARNearbyStationsViewController: UIViewController {
   override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -21,6 +22,8 @@ class ARNearbyStationsViewController: UIViewController {
   lazy var sceneLocationView = SceneLocationView();
   lazy var stationManager = StationManager.default;
   lazy var stationsInView: [Station] = [];
+  lazy var isExpanded: Bool = false;
+  var mapCenter: CGPoint;
 
   lazy var loader: ARTLoaderView = {
     let _loader = ARTLoaderView(frame: self.view.frame);
@@ -36,6 +39,7 @@ class ARNearbyStationsViewController: UIViewController {
   @IBOutlet weak var settingsButton: UIButton!
   @IBOutlet weak var debugBlur: UIVisualEffectView!
   @IBOutlet weak var debugStack: UIStackView!
+  @IBOutlet weak var mapView: MKMapView!
   
   var rerun: Bool = false;
   var hasInitialized: Bool = false {
@@ -51,6 +55,7 @@ class ARNearbyStationsViewController: UIViewController {
     self.loader.show();
     self.setupButton();
     self.addTapGesture();
+    self.setupMapView();
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -82,13 +87,59 @@ class ARNearbyStationsViewController: UIViewController {
     self.settingsButton.layer.shadowRadius = 8;
     self.settingsButton.layer.shadowOffset = CGSize(width: 0, height: 0);
     self.settingsButton.layer.shadowColor = UIColor.black.cgColor;
+    self.settingsButton.addTarget(self, action: #selector(didTapSettings), for: .touchUpInside);
   }
   
   func addTapGesture() {
     let tapGestureRecognizer = UITapGestureRecognizer(target: self,
                                                       action: #selector(didTapScene));
-
     self.sceneLocationView.addGestureRecognizer(tapGestureRecognizer);
+  }
+  
+  func setupMapView() {
+    self.mapView.layer.cornerRadius = self.mapView.frame.height / 2;
+    self.mapView.showsCompass = false;
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapMap));
+    tapGesture.numberOfTapsRequired = 1;
+    self.mapView.addGestureRecognizer(tapGesture);
+  }
+  
+  @objc func didTapMap(_ recognizer: UITapGestureRecognizer) {
+    if !isExpanded {
+      //Expand the video
+      UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+        
+        self.mapCenter = self.mapView.center
+        
+        self.mapView.frame = CGRect(x: 0, y: 0, width: self.view.frame.height, height: self.view.frame.width)
+        self.mapView.center = self.view.center
+        self.mapView.layoutSubviews()
+        
+      }, completion: nil)
+    } else {
+      //Shrink the video again
+      
+      UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+        
+        //16 x 9 is the aspect ratio of all HD videos
+        
+        self.mapView.center = self.mapCenter
+        
+        let height = self.view.frame.width * 9 / 16
+        let videoPlayerFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: height)
+        self.videoPlayerView.frame = videoPlayerFrame
+        
+        self.videoPlayerView.layoutSubviews()
+        
+      }, completion: nil)
+    }
+    
+    isExpanded = !isExpanded
+  }
+  
+  @objc func didTapSettings(_ sender: UIButton) {
+    let open: Bool = true;
+    NotificationCenter.default.post(name: .SettingsNotification, object: open);
   }
   
   @objc func didTapScene(withGestureRecognizer recognizer: UITapGestureRecognizer) {
@@ -122,6 +173,7 @@ class ARNearbyStationsViewController: UIViewController {
 
       self.stationManager.delegate = self;
       self.stationManager.enableLocationServices();
+      self.mapView.setUserTrackingMode(.followWithHeading, animated: true);
       self.loader.hide();
     }
   }
@@ -156,6 +208,7 @@ class ARNearbyStationsViewController: UIViewController {
 ///MARK: StationManagerDelegate methods
 extension ARNearbyStationsViewController: StationManagerDelegate {
   func stationManager(_ manager: StationManager, didUpdateStations stations: [Station]?, withTrains trains: [[Train]]) {
+
     guard let stations = stations, let userLoc = manager.location else { return; }
     
     DispatchQueue.main.sync {

@@ -24,7 +24,9 @@ public class APIManager {
   
   func getNearbyTrains(_ coordinate: CLLocationCoordinate2D, completion: @escaping (_ error: Error?, _ response: NearbyTransit?) -> ()) {
     
-    self.get(path: "/location?lat=\(coordinate.latitude)&long=\(coordinate.longitude)&maxDistance=650") {
+    let maxDist = SettingsManager.default.value(forKey: .searchDistance) as! Int;
+    print("max distance is.... \(maxDist)");
+    self.get(path: "/location?lat=\(coordinate.latitude)&long=\(coordinate.longitude)&maxDistance=\(maxDist)") {
       (err, response) in
         if let e = err { return completion(e, nil) }
         guard let response = response else { return completion(nil, nil); }

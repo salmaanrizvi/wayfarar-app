@@ -9,7 +9,14 @@
 import UIKit
 import Pulley
 
+enum DrawerType: String {
+  case settings = "SettingsViewController"
+  case stations = "NearByTableViewController"
+}
+
 class PulleyContainerViewController: PulleyViewController {
+  
+  var currentDrawer: DrawerType = .stations;
   
   override func viewDidLoad() {
     super.viewDidLoad();
@@ -19,6 +26,7 @@ class PulleyContainerViewController: PulleyViewController {
     self.setDrawerPosition(position: .closed);
     
     NotificationCenter.default.addObserver(self, selector: #selector(didReceiveDrawerNotification), name: .DrawerNotification, object: nil);
+    NotificationCenter.default.addObserver(self, selector: #selector(didReceiveSettingsNotification), name: .SettingsNotification, object: nil)
   }
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated);
@@ -32,13 +40,46 @@ class PulleyContainerViewController: PulleyViewController {
   
   @objc func didReceiveDrawerNotification(_ notification: NSNotification) {
     DispatchQueue.main.async {
+      let position: PulleyPosition = notification.object != nil ? .partiallyRevealed : .closed;
+      
       if notification.object != nil {
-        NotificationCenter.default.post(name: .ScrollToStationNotification, object: notification.object);
-        self.setDrawerPosition(position: .partiallyRevealed, animated: true);
+        self.setDrawer(to: .stations, completion: {
+          NotificationCenter.default.post(name: .ScrollToStationNotification, object: notification.object);
+          self.setDrawerPosition(position: position, animated: true)
+        });
       }
       else { // close drawer notif
-        self.setDrawerPosition(position: .closed, animated: true);
+        self.setDrawerPosition(position: position, animated: true);
       }
+    }
+  }
+  
+  @objc func didReceiveSettingsNotification(_ notification: NSNotification) {
+    if let open = notification.object as? Bool {
+      DispatchQueue.main.async {
+        let position: PulleyPosition = open ? .open : .closed;
+
+        if open {
+          self.setDrawer(to: .settings, completion: {
+            self.setDrawerPosition(position: position, animated: !open);
+          })
+        }
+        else { self.setDrawerPosition(position: position, animated: !open) }
+      }
+    }
+  }
+  
+  func setDrawer(to drawerType: DrawerType, completion: @escaping () -> ()) {
+    if drawerType == self.currentDrawer {
+      return completion();
+    }
+    else {
+      let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: drawerType.rawValue);
+      
+      self.currentDrawer = drawerType;
+      self.setDrawerContentViewController(controller: vc, animated: false, completion: { finished in
+        return completion();
+      });
     }
   }
 }

@@ -9,6 +9,7 @@
 import Foundation
 
 extension Notification.Name {
+  static let SettingsNotification = Notification.Name("SettingsNotification");
   static let DrawerNotification = Notification.Name("DrawerNotification");
   static let ScrollToStationNotification = Notification.Name("ScrollToStationNotification");
 }
