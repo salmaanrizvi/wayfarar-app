@@ -1,6 +1,10 @@
 # A.R.T - Augmented Reality Transit (fka wayfarar)
 
-Transit times are extremely useful. In New York City, however, you only get realiable information once you're already _in_ the station. That's not helpful. A.R.T. aims to help you decide which of the (likely many) stations you're closest to and which have trains arriving the soonest so you can optimize your route.
+Transit times are extremely useful. In New York City, however, you only get realiable information once you're already _in_ the station. That's not helpful.
+
+A.R.T. aims to help you decide which of the (likely many) stations you're closest to and which have trains arriving the soonest so you can optimize your route.
+
+This iOS app is powered by a simple [Node.js express server](https://github.com/salmaanrizvi/wayfarar-server);
 
 Here's a link to a [full demo video](https://vimeo.com/330042254)
 
